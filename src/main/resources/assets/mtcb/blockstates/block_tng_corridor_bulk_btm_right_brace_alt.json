@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mtcb:block_tng_corridor_bulk_btm_right_brace_alt" },
+        "facing=south": { "model": "mtcb:block_tng_corridor_bulk_btm_right_brace_alt", "y": 180 },
+        "facing=west":  { "model": "mtcb:block_tng_corridor_bulk_btm_right_brace_alt", "y": 270 },
+        "facing=east":  { "model": "mtcb:block_tng_corridor_bulk_btm_right_brace_alt", "y": 90 }
+    }
+}

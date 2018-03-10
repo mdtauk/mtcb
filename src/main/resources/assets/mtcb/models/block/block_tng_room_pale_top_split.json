@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "mtcb:blocks/tng/room_pale/tng_room_pale_top_split",
+        "down": "mtcb:blocks/tng/tng_wall_pale",
+        "up": "mtcb:blocks/tng/tng_wall_pale",
+        "north": "mtcb:blocks/tng/room_pale/tng_room_pale_top_split",
+        "east": "mtcb:blocks/tng/room_pale/tng_room_pale_top_flush",
+        "south": "mtcb:blocks/tng/room_pale/tng_room_pale_top_split",
+        "west": "mtcb:blocks/tng/room_pale/tng_room_pale_top_flush"
+    }
+}

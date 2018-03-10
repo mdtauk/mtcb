@@ -1,0 +1,9 @@
+{
+    "parent": "mtcb:block/doors/trek_door_top",
+    "ambientocclusion": false,
+    "textures": {
+        "front": "mtcb:blocks/tng/doors/tng_orange_door_top",
+        "edges": "mtcb:blocks/tng/doors/tng_orange_door_edges",
+        "back": "mtcb:blocks/tng/doors/tng_orange_door_top_back"
+    }
+}

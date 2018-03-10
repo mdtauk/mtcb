@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mtcb:block_tng_corridor_screen_top_right_brace" },
+        "facing=south": { "model": "mtcb:block_tng_corridor_screen_top_right_brace", "y": 180 },
+        "facing=west":  { "model": "mtcb:block_tng_corridor_screen_top_right_brace", "y": 270 },
+        "facing=east":  { "model": "mtcb:block_tng_corridor_screen_top_right_brace", "y": 90 }
+    }
+}

@@ -1,0 +1,16 @@
+[
+    {
+      "modid": "mtcb",
+      "name": "MineTrek Custom Blocks",
+      "description": "Custom Blocks designed for MineTrek Builders.",
+      "version": "1.01",
+      "mcversion": "1.12.2",
+      "url": "minetrek.net",
+      "updateUrl": "",
+      "authorList": ["mdtaUK", "mheller3000"],
+      "credits": "All copyrights belong to CBS and Paramount Pictures",
+      "logoFile": "",
+      "screenshots": [],
+      "dependencies": []
+    }
+]

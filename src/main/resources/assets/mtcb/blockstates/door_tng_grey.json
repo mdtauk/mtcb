@@ -1,0 +1,89 @@
+{
+    "variants": {
+        "facing=east,half=lower,hinge=left,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm", "y": 180 },
+        "facing=south,half=lower,hinge=left,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_btm", "y": 270 },
+        "facing=west,half=lower,hinge=left,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm" },
+        "facing=north,half=lower,hinge=left,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_btm", "y": 90 },
+        
+        "facing=east,half=lower,hinge=right,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm", "y": 180 },
+        "facing=south,half=lower,hinge=right,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_btm", "y": 270 },
+        "facing=west,half=lower,hinge=right,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm" },
+        "facing=north,half=lower,hinge=right,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_btm", "y": 90 },
+        
+        "facing=east,half=lower,hinge=left,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 180 },
+        "facing=south,half=lower,hinge=left,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 270 },
+        "facing=west,half=lower,hinge=left,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm_open" },
+        "facing=north,half=lower,hinge=left,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 90 },
+        
+        "facing=east,half=lower,hinge=right,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 180 },
+        "facing=south,half=lower,hinge=right,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 270},
+        "facing=west,half=lower,hinge=right,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_btm_open" },
+        "facing=north,half=lower,hinge=right,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 90 },
+        
+        
+        "facing=east,half=upper,hinge=left,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_top", "y": 180 },
+        "facing=south,half=upper,hinge=left,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_top", "y": 270 },
+        "facing=west,half=upper,hinge=left,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_top" },
+        "facing=north,half=upper,hinge=left,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_top", "y": 90 },
+        
+        "facing=east,half=upper,hinge=right,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_top", "y": 180 },
+        "facing=south,half=upper,hinge=right,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_top", "y": 270 },
+        "facing=west,half=upper,hinge=right,open=false,powered=false":  { "model": "mtcb:doors/tng_grey_door_top" },
+        "facing=north,half=upper,hinge=right,open=false,powered=false": { "model": "mtcb:doors/tng_grey_door_top", "y": 90 },
+        
+        "facing=east,half=upper,hinge=left,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_top_open", "y": 180 },
+        "facing=south,half=upper,hinge=left,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 270 },
+        "facing=west,half=upper,hinge=left,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_top_open" },
+        "facing=north,half=upper,hinge=left,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 90 },
+        
+        "facing=east,half=upper,hinge=right,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_top_open", "y": 180 },
+        "facing=south,half=upper,hinge=right,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 270 },
+        "facing=west,half=upper,hinge=right,open=true,powered=false":  { "model": "mtcb:doors/tng_grey_door_top_open" },
+        "facing=north,half=upper,hinge=right,open=true,powered=false": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 90 },
+        
+        
+        
+        
+        
+        "facing=east,half=lower,hinge=left,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm", "y": 180 },
+        "facing=south,half=lower,hinge=left,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_btm", "y": 270 },
+        "facing=west,half=lower,hinge=left,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm" },
+        "facing=north,half=lower,hinge=left,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_btm", "y": 90 },
+        
+        "facing=east,half=lower,hinge=right,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm", "y": 180 },
+        "facing=south,half=lower,hinge=right,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_btm", "y": 270 },
+        "facing=west,half=lower,hinge=right,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm" },
+        "facing=north,half=lower,hinge=right,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_btm", "y": 90 },
+        
+        "facing=east,half=lower,hinge=left,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 180 },
+        "facing=south,half=lower,hinge=left,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 270 },
+        "facing=west,half=lower,hinge=left,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm_open" },
+        "facing=north,half=lower,hinge=left,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 90 },
+        
+        "facing=east,half=lower,hinge=right,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 180 },
+        "facing=south,half=lower,hinge=right,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 270},
+        "facing=west,half=lower,hinge=right,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_btm_open" },
+        "facing=north,half=lower,hinge=right,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_btm_open", "y": 90 },
+        
+        
+        "facing=east,half=upper,hinge=left,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_top", "y": 180 },
+        "facing=south,half=upper,hinge=left,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_top", "y": 270 },
+        "facing=west,half=upper,hinge=left,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_top" },
+        "facing=north,half=upper,hinge=left,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_top", "y": 90 },
+        
+        "facing=east,half=upper,hinge=right,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_top", "y": 180 },
+        "facing=south,half=upper,hinge=right,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_top", "y": 270 },
+        "facing=west,half=upper,hinge=right,open=false,powered=true":  { "model": "mtcb:doors/tng_grey_door_top" },
+        "facing=north,half=upper,hinge=right,open=false,powered=true": { "model": "mtcb:doors/tng_grey_door_top", "y": 90 },
+        
+        "facing=east,half=upper,hinge=left,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_top_open", "y": 180 },
+        "facing=south,half=upper,hinge=left,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 270 },
+        "facing=west,half=upper,hinge=left,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_top_open" },
+        "facing=north,half=upper,hinge=left,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 90 },
+        
+        "facing=east,half=upper,hinge=right,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_top_open", "y": 180 },
+        "facing=south,half=upper,hinge=right,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 270 },
+        "facing=west,half=upper,hinge=right,open=true,powered=true":  { "model": "mtcb:doors/tng_grey_door_top_open" },
+        "facing=north,half=upper,hinge=right,open=true,powered=true": { "model": "mtcb:doors/tng_grey_door_top_open", "y": 90 }
+    }
+}

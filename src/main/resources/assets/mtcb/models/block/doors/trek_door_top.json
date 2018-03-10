@@ -1,0 +1,21 @@
+{
+	"__comment": "Designed by mdtaUK",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#front"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "door_upper",
+			"from": [ 7, 0, 0 ],
+			"to": [ 9, 16, 16 ],
+			"faces": {
+				"up":       { "uv": [ 0, 0, 16, 2 ],    "texture": "#back",     "cullface": "up",       "rotation": 90 },
+				"north":    { "uv": [ 0, 0, 2, 16 ],    "texture": "#back",    "cullface": "north"},
+				"south":    { "uv": [ 14, 0, 16, 16 ],  "texture": "#back",    "cullface": "south" },
+				"west":     { "uv": [ 16, 0, 0, 16 ],   "texture": "#back",     "cullface": "west" },
+				"east":     { "uv": [ 0, 0, 16, 16 ],   "texture": "#front" }
+			}
+		}
+	]
+}
