@@ -11,6 +11,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.EnumFacing;
@@ -18,12 +19,19 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minetrek.mdta.mtcb.Main;
+
 import net.minetrek.mdta.mtcb.init.InitBlocks;
 import net.minetrek.mdta.mtcb.init.InitItems;
+import net.minetrek.mdta.mtcb.util.References;
 import net.minetrek.mdta.mtcb.util.interfaces.IHasModel;
 
 
 
+/*
+ * Class to extend and customise a BlockHorizontal
+ * 
+ * MDTA: This is what I use to create blocks with a specific front texture, facing towards you when it is placed
+ */
 public class BlockFacing extends BlockHorizontal implements IHasModel
 {
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
@@ -160,10 +168,13 @@ public class BlockFacing extends BlockHorizontal implements IHasModel
 
 
 
+	/*
+	 * This creates an ItemRenderer for an Block derived from a BlockFacings Block and sets an inventory variant 
+	 */
 	@Override
 	public void registerModels()
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, References.MOD_DEFAULT_VARIANT);
 	}
 	
 	

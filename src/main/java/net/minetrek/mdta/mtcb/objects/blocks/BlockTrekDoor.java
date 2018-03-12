@@ -26,53 +26,77 @@ import net.minetrek.mdta.mtcb.Main;
 import net.minetrek.mdta.mtcb.init.InitBlocks;
 import net.minetrek.mdta.mtcb.init.InitItems;
 import net.minetrek.mdta.mtcb.objects.items.ItemDoorBase;
+import net.minetrek.mdta.mtcb.util.References;
 import net.minetrek.mdta.mtcb.util.handlers.HandleSounds;
 import net.minetrek.mdta.mtcb.util.interfaces.IHasModel;
 
 
 
+/*
+ * Class to extend and customise a BlockDoor
+ */
 public class BlockTrekDoor extends BlockDoor implements IHasModel
 {
-	protected static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.1875D);
-    protected static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.8125D, 1.0D, 1.0D, 1.0D);
+	/*
+	 * MDTA I have created my own bounding boxes to match my custom models and states
+	 */
 	
+	//
 	// 1st Point X1, Y1, Z1 - 2nd Point X2, Y2, Z2
+    //
+    // Co-ordinate values are relative to the standard block | from 0,0,0 to 1,1,1
 	//
-	// Values are Decimal so 16 / 1 | 1/16 = 0.0625D
+	// X = Horizontal    
+    // Y = Vertical    
+    // Z = Depth
 	//
-	// /|
-	//			X __    Y |    Z /
-	// |/_
-	//
+    
+    // We divide 1 / 16 to helpposition our bounding box co-ordinates
 	private static double oneSixteenth = 0.0625D;
+	
+	// We divide 1 / 32 to help position our bounding box co-ordinates
 	private static double oneThirtyTwo = 0.03125D;
-
+	
+	
+	// BoundingBox co-ordinates when a Trek Door is closed facing North or South
 	protected static final AxisAlignedBB NORTH_SOUTH_AABB = new AxisAlignedBB(
 			0.0D, 0.0D, (oneSixteenth * 7) - oneThirtyTwo, 
 			1.0D, 1.0D, (oneSixteenth * 9) + oneThirtyTwo);
 	
+	// BoundingBox co-ordinates when a Trek Door is open with a Left Hinge
 	protected static final AxisAlignedBB NORTH_SOUTH_LEFT_AABB = new AxisAlignedBB(
 			(oneSixteenth * 14), 0.0D, (oneSixteenth * 3) - oneThirtyTwo,
 			1.0D, 1.0D, (oneSixteenth * 13) + oneThirtyTwo);
 	
+	// BoundingBox co-ordinates when a Trek Door is open with a Right hinge
 	protected static final AxisAlignedBB NORTH_SOUTH_RIGHT_AABB = new AxisAlignedBB(
 			0.0D, 0.0D, (oneSixteenth * 3) - oneThirtyTwo,
 			(oneSixteenth * 2), 1.0D, (oneSixteenth * 13) + oneThirtyTwo);
 	
+	
+	
+	// BoundingBox co-ordinates when a Trek Door is closed facing East or West
 	protected static final AxisAlignedBB EAST_WEST_AABB = new AxisAlignedBB(
 			(oneSixteenth * 7) - oneThirtyTwo, 0.0D, 0.0D, 
 			(oneSixteenth * 9) + oneThirtyTwo, 1.0D, 1.0D);
 	
+	// BoundingBox co-ordinates when a Trek Door is open with a Left Hinge
 	protected static final AxisAlignedBB EAST_WEST_LEFT_AABB = new AxisAlignedBB(
 			(oneSixteenth * 3) - oneThirtyTwo, 0.0D, (oneSixteenth * 14), 
 			(oneSixteenth * 13) + oneThirtyTwo, 1.0D, 1.0D);
 	
+	// BoundingBox co-ordinates when a Trek Door is open with a Right Hinge
 	protected static final AxisAlignedBB EAST_WEST_RIGHT_AABB = new AxisAlignedBB(
 			(oneSixteenth * 3), 0.0D, 0.0D, 
 			(oneSixteenth * 13), 1.0D, (oneSixteenth * 2));
 
 
-
+	
+	/**
+	 * @param  name String to be used as the registryName and unlocalizedName for a BlockTrekDoor created from this class.
+	 * @param  material Material to be used as a default (for Doors don't use IRON unless you require the door to only open with redstone)
+	 * @param  tab Sets which CTab or CreativeTab a Door should be grouped into.
+	 */
 	public BlockTrekDoor(String name, Material material, CreativeTabs tab)
 	{
 		super(material);
@@ -87,8 +111,11 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 				.withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, BlockDoor.EnumDoorHalf.LOWER));
 
 
-
+		
+		// Add this to the List of ALL_BLOCKS which are to be registered
 		InitBlocks.ALL_BLOCKS.add(this);
+		
+		// Add an ItemDoorBase to the List of ALL_ITEMS which are to be registered
 		InitItems.ALL_ITEMS.add(new ItemDoorBase(name, tab, this));
 
 		this.useNeighborBrightness = true;
@@ -96,6 +123,15 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 
 
 
+	/*
+	 * Code taken from the standard BlockDoor to set the AxisAlignedBoundingBox for the Door Blocks based on:
+	 * - Direction the Door faces;
+	 * - Whether the Door is open or closed;
+	 * - If the Door is hinged left or right;
+	 * 
+	 * MDTA I have created my own bounding boxes to match my custom models
+	 * @see net.minecraft.block.BlockDoor#getBoundingBox(net.minecraft.block.state.IBlockState, net.minecraft.world.IBlockAccess, net.minecraft.util.math.BlockPos)
+	 */
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
 	{
 		state = state.getActualState(source, pos);
@@ -119,6 +155,10 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 
 
 
+	/*
+	 * Code taken from the standard BlockDoor to affect the Door when the player right clicks on the Door Blocks
+	 * @see net.minecraft.block.BlockDoor#onBlockActivated(net.minecraft.world.World, net.minecraft.util.math.BlockPos, net.minecraft.block.state.IBlockState, net.minecraft.entity.player.EntityPlayer, net.minecraft.util.EnumHand, net.minecraft.util.EnumFacing, float, float, float)
+	 */
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
@@ -142,6 +182,9 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 				state = iblockstate.cycleProperty(OPEN);
 				worldIn.setBlockState(blockpos, state, 10);
 				worldIn.markBlockRangeForRenderUpdate(blockpos, pos);
+				/*
+				 * MDTA: I changed the code which plays a sound, so it will play a custom SoundEvent
+				 */
 				worldIn.playSound(null, pos, HandleSounds.TNG_DOOR, SoundCategory.BLOCKS, 0.5F,
 						(worldIn.rand.nextFloat() * 0.1F) + 0.9F);
 				return true;
@@ -150,7 +193,10 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 	}
 
 
-
+	/*
+	 * Code taken from the standard BlockDoor to affect the Door when blocks around it change
+	 * @see net.minecraft.block.BlockDoor#neighborChanged(net.minecraft.block.state.IBlockState, net.minecraft.world.World, net.minecraft.util.math.BlockPos, net.minecraft.block.Block, net.minecraft.util.math.BlockPos)
+	 */
 	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
 	{
 		if (state.getValue(HALF) == BlockDoor.EnumDoorHalf.UPPER)
@@ -210,6 +256,9 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 					{
 						worldIn.setBlockState(pos, state.withProperty(OPEN, Boolean.valueOf(flag)), 2);
 						worldIn.markBlockRangeForRenderUpdate(pos, pos);
+						/*
+						 * MDTA: I changed the code which plays a sound, so it will play a custom SoundEvent
+						 */
 						worldIn.playSound(null, pos, HandleSounds.TNG_DOOR, SoundCategory.BLOCKS, 0.5F,
 								(worldIn.rand.nextFloat() * 0.1F) + 0.9F);
 					}
@@ -220,6 +269,9 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 
 
 
+	/*
+	 * Create an ItemStack for an Item for a BlockTrekDoor
+	 */
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
 	{
@@ -228,6 +280,9 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 
 
 
+	/*
+	 * Get the Item that should be created for a BlockTrekDoor
+	 */
 	private Item getItem()
 	{
 		return Item.getItemFromBlock(this);
@@ -235,10 +290,13 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 
 
 
+	/*
+	 * This creates an ItemRenderer for an Item derived from a BlockTrekDoor Block and sets an inventory variant 
+	 */
 	@Override
 	public void registerModels()
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, References.MOD_DEFAULT_VARIANT);
 	}
 
 }

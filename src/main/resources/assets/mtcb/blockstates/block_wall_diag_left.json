@@ -1,0 +1,11 @@
+{
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "mtcb:block_wall_diag_left.obj",
+    "texture": "mtcb:blocks/block_wall_diag_left.obj"
+  },
+  "variants": {
+    "normal": [{"model": "mtcb:block_wall_diag_left.obj"}],
+    "inventory": [{}]
+  }
+}

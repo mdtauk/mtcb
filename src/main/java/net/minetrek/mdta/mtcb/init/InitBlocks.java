@@ -6,15 +6,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockShulkerBox;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.EnumDyeColor;
 import net.minetrek.mdta.mtcb.Main;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockBase;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockFacing;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockObj;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
+import net.minetrek.mdta.mtcb.util.References;
 
 
 
+/*
+ * List of All Blocks to be instantiated and then added to the registration list
+ */
 public class InitBlocks
 {
 	public static final List<Block> ALL_BLOCKS = new ArrayList<Block>();
@@ -25,12 +32,17 @@ public class InitBlocks
 	 * 
 	 */
 
+	// Test of OBJ block
+	// public static final Block BLOCK_WALL_DIAG_LEFT = new BlockObj("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);	
+	
+	
+	
 	// T N G B L O C K S
 	//
 	public static final Block DOOR_TNG_ORANGE = new BlockTrekDoor("door_tng_orange", Material.WOOD, Main.TAB_TNG);
 	public static final Block DOOR_TNG_GREY = new BlockTrekDoor("door_tng_grey", Material.WOOD, Main.TAB_TNG);
 	/*
-	 * FILLER HULL BLOCKS
+	 * FILLER WALL BLOCKS
 	 */
 	public static final Block BLOCK_TNG_TAN = new BlockBase("block_tng_tan", Material.IRON, Main.TAB_TNG, 0f, 8,
 			SoundType.METAL);

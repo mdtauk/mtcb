@@ -12,10 +12,14 @@ import net.minecraft.item.ItemBlock;
 import net.minetrek.mdta.mtcb.Main;
 import net.minetrek.mdta.mtcb.init.InitBlocks;
 import net.minetrek.mdta.mtcb.init.InitItems;
+import net.minetrek.mdta.mtcb.util.References;
 import net.minetrek.mdta.mtcb.util.interfaces.IHasModel;
 
 
 
+/*
+ * Class to extend and customise a Block
+ */
 public class BlockBase extends Block implements IHasModel
 {	
 	// Basic constructor variant
@@ -38,6 +42,8 @@ public class BlockBase extends Block implements IHasModel
 
 		InitBlocks.ALL_BLOCKS.add(this);
 		InitItems.ALL_ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		
+		getEnableStats();
 	}
 	
 	
@@ -79,7 +85,8 @@ public class BlockBase extends Block implements IHasModel
 	@Override
 	public void registerModels()
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, References.MOD_DEFAULT_VARIANT);
+		Main.logger.info("AWOOGA Added Item from Block: " + this.getRegistryName().toString());
 	}
 
 }

@@ -12,6 +12,9 @@ import net.minetrek.mdta.mtcb.util.References;
 
 public class HandleSounds
 {
+	/*
+	 * Define SoundEvents which will be instantiated below
+	 */
 	public static SoundEvent TNG_DOOR;
 	public static SoundEvent TNG_DOOR_PLACE;
 	
@@ -19,6 +22,9 @@ public class HandleSounds
 	
 	
 	
+	/*
+	 * A method to instantiate SoundEvents which are to be registered
+	 */
 	public static void registerSounds()
 	{
 		TNG_DOOR = registerSound("sound_tng_door");
@@ -29,6 +35,9 @@ public class HandleSounds
 	
 	
 	
+	/*
+	 * An event to register instantiated SoundEvents within the Forge Registries
+	 */
 	private static SoundEvent registerSound(String name)
 	{
 		ResourceLocation location = new ResourceLocation(References.MOD_ID, name);
