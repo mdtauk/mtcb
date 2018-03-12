@@ -12,7 +12,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
 import net.minetrek.mdta.mtcb.objects.tabs.CTab;
 import net.minetrek.mdta.mtcb.proxies.CommonProxy;
 import net.minetrek.mdta.mtcb.util.References;
@@ -83,7 +82,10 @@ public class Main
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		logger = event.getModLog();
-		proxy.preInit(event);	
+		proxy.preInit(event);
+		
+		Main.logger.debug("AWOOGA - Main.preInit: OBJLoader will now add the domain " + References.MOD_ID + ":");
+		OBJLoader.INSTANCE.addDomain(References.MOD_ID.toLowerCase());
 	}
 
 

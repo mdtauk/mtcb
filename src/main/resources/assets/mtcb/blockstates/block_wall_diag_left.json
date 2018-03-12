@@ -1,11 +1,13 @@
 {
+  "forge_marker": 1,
   "defaults": {
     "custom": { "flip-v": true },
-    "model": "mtcb:block_wall_diag_left.obj",
-    "texture": "mtcb:blocks/block_wall_diag_left.obj"
+    "model": "mtcb:block_wall_diag_left.obj"
   },
   "variants": {
-    "normal": [{"model": "mtcb:block_wall_diag_left.obj"}],
-    "inventory": [{}]
-  }
+        "facing=north": { "model": "mtcb:block_wall_diag_left.obj" },
+        "facing=south": { "model": "mtcb:block_wall_diag_left.obj", "y": 180 },
+        "facing=west":  { "model": "mtcb:block_wall_diag_left.obj", "y": 270 },
+        "facing=east":  { "model": "mtcb:block_wall_diag_left.obj", "y": 90 }
+    }
 }

@@ -6,16 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockShulkerBox;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.EnumDyeColor;
 import net.minetrek.mdta.mtcb.Main;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockBase;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockFacing;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockObj;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
-import net.minetrek.mdta.mtcb.util.References;
 
 
 
@@ -33,10 +30,11 @@ public class InitBlocks
 	 */
 
 	// Test of OBJ block
-	// public static final Block BLOCK_WALL_DIAG_LEFT = new BlockObj("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);	
-	
-	
-	
+	//public static final Block BLOCK_WALL_DIAG_LEFT = new BlockObj("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);
+	public static final Block BLOCK_WALL_45_LEFT = new BlockFacing("wall_45deg", Material.WOOD, Main.TAB_ENT, 1.0f, 0, SoundType.METAL);
+
+
+
 	// T N G B L O C K S
 	//
 	public static final Block DOOR_TNG_ORANGE = new BlockTrekDoor("door_tng_orange", Material.WOOD, Main.TAB_TNG);

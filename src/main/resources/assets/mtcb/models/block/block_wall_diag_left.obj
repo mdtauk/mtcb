@@ -1,5 +1,5 @@
-mtllib block_wall_diag_left.mtl
-o block_wall_diag_left
+mtllib block_wall_diag_tex.mtl
+o Diagonal Wall
 v 1.000000 0.000000 1.000000
 v 0.000000 0.000000 1.000000
 v 0.000000 1.000000 1.000000
@@ -23,7 +23,7 @@ vn 0.000000 0.000000 1.000000
 vn 0.000000 1.000000 -0.000000
 vn 0.707100 0.000000 -0.707100
 vn 0.000000 -1.000000 0.000000
-usemtl tex
+usemtl WallTexture
 f 6/1/1 5/2/1 2/3/1
 f 3/4/2 2/3/2 1/5/2
 f 4/5/3 6/6/3 3/7/3

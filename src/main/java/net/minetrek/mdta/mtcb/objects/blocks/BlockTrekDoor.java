@@ -297,6 +297,7 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
 	public void registerModels()
 	{
 		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, References.MOD_DEFAULT_VARIANT);
+		Main.logger.info("AWOOGA Added Item from Block: " + this.getRegistryName().toString());
 	}
 
 }

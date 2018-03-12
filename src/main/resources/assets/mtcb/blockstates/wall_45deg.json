@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mtcb:wall_45deg", "y": 180 },
+        "facing=south": { "model": "mtcb:wall_45deg" },
+        "facing=west":  { "model": "mtcb:wall_45deg", "y": 90 },
+        "facing=east":  { "model": "mtcb:wall_45deg", "y": 270 }
+    }
+}

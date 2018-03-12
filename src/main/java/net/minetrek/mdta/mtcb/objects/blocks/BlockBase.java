@@ -8,7 +8,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-
 import net.minetrek.mdta.mtcb.Main;
 import net.minetrek.mdta.mtcb.init.InitBlocks;
 import net.minetrek.mdta.mtcb.init.InitItems;

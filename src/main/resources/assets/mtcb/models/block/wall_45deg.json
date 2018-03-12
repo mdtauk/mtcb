@@ -1,0 +1,57 @@
+{
+    "__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
+    "textures": {
+        "particle": "mtcb:blocks/test_r",
+        "diag": "mtcb:blocks/test_b",
+        "diag_x": "mtcb:blocks/test_r",
+        "down": "mtcb:blocks/test_g",
+        "up": "mtcb:blocks/test_m",
+        "east": "mtcb:blocks/test_c",
+        "north": "mtcb:blocks/test_y"
+    },
+    "elements": [    
+        {
+            "__comment": "Diagonal",
+            "from": [ 0, 0, 0 ],
+            "to": [ 0, 16, 16 ],
+            "rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": 45 },
+            "faces": {
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#diag" }
+            }
+        },
+        {
+            "__comment": "North",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 0 ],
+            "faces": {
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#north", "cullface": "north" }
+            }
+        },
+        {
+            "__comment": "East",
+            "from": [ 16, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#east", "cullface": "east" }
+            }
+        },
+        {
+            "__comment": "Down",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 0, 16 ],
+            "faces": {
+                "down": { "uv": [ 16, 16, 0, 0 ], "texture": "#down", "cullface": "down", "rotation": 180 },
+                "up": { "uv": [ 16, 16, 0, 0 ], "texture": "#up", "rotation": 180 }
+            }
+        },
+        {
+            "__comment": "DiagonalExtra",
+            "from": [ 15.999, 0, 9.37 ],
+            "to": [ 16, 16, 16 ],
+            "rotation": { "origin": [ 16, 0, 16 ], "axis": "y", "angle": 45 },
+            "faces": {
+                "west": { "uv": [ 0, 0, 6.666667, 16 ], "texture": "#diag_x" }
+            }
+        }
+    ]
+}
