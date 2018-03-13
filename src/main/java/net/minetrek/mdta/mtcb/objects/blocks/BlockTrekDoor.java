@@ -51,44 +51,44 @@ public class BlockTrekDoor extends BlockDoor implements IHasModel
     // Z = Depth
 	//
     
-    // We divide 1 / 16 to helpposition our bounding box co-ordinates
-	private static double oneSixteenth = 0.0625D;
+    // We divide 1 / 16 to help position our bounding box co-ordinates
+	private static double _unit = 1.0D / 16.0D;
 	
 	// We divide 1 / 32 to help position our bounding box co-ordinates
-	private static double oneThirtyTwo = 0.03125D;
+	private static double _halfUnit = _unit / 2.0D;
 	
 	
 	// BoundingBox co-ordinates when a Trek Door is closed facing North or South
 	protected static final AxisAlignedBB NORTH_SOUTH_AABB = new AxisAlignedBB(
-			0.0D, 0.0D, (oneSixteenth * 7) - oneThirtyTwo, 
-			1.0D, 1.0D, (oneSixteenth * 9) + oneThirtyTwo);
+			0.0D, 0.0D, (_unit * 7) - _halfUnit, 
+			1.0D, 1.0D, (_unit * 9) + _halfUnit);
 	
 	// BoundingBox co-ordinates when a Trek Door is open with a Left Hinge
 	protected static final AxisAlignedBB NORTH_SOUTH_LEFT_AABB = new AxisAlignedBB(
-			(oneSixteenth * 14), 0.0D, (oneSixteenth * 3) - oneThirtyTwo,
-			1.0D, 1.0D, (oneSixteenth * 13) + oneThirtyTwo);
+			(_unit * 14), 0.0D, (_unit * 3) - _halfUnit,
+			1.0D, 1.0D, (_unit * 13) + _halfUnit);
 	
 	// BoundingBox co-ordinates when a Trek Door is open with a Right hinge
 	protected static final AxisAlignedBB NORTH_SOUTH_RIGHT_AABB = new AxisAlignedBB(
-			0.0D, 0.0D, (oneSixteenth * 3) - oneThirtyTwo,
-			(oneSixteenth * 2), 1.0D, (oneSixteenth * 13) + oneThirtyTwo);
+			0.0D, 0.0D, (_unit * 3) - _halfUnit,
+			(_unit * 2), 1.0D, (_unit * 13) + _halfUnit);
 	
 	
 	
 	// BoundingBox co-ordinates when a Trek Door is closed facing East or West
 	protected static final AxisAlignedBB EAST_WEST_AABB = new AxisAlignedBB(
-			(oneSixteenth * 7) - oneThirtyTwo, 0.0D, 0.0D, 
-			(oneSixteenth * 9) + oneThirtyTwo, 1.0D, 1.0D);
+			(_unit * 7) - _halfUnit, 0.0D, 0.0D, 
+			(_unit * 9) + _halfUnit, 1.0D, 1.0D);
 	
 	// BoundingBox co-ordinates when a Trek Door is open with a Left Hinge
 	protected static final AxisAlignedBB EAST_WEST_LEFT_AABB = new AxisAlignedBB(
-			(oneSixteenth * 3) - oneThirtyTwo, 0.0D, (oneSixteenth * 14), 
-			(oneSixteenth * 13) + oneThirtyTwo, 1.0D, 1.0D);
+			(_unit * 3) - _halfUnit, 0.0D, (_unit * 14), 
+			(_unit * 13) + _halfUnit, 1.0D, 1.0D);
 	
 	// BoundingBox co-ordinates when a Trek Door is open with a Right Hinge
 	protected static final AxisAlignedBB EAST_WEST_RIGHT_AABB = new AxisAlignedBB(
-			(oneSixteenth * 3), 0.0D, 0.0D, 
-			(oneSixteenth * 13), 1.0D, (oneSixteenth * 2));
+			(_unit * 3), 0.0D, 0.0D, 
+			(_unit * 13), 1.0D, (_halfUnit * 2));
 
 
 	

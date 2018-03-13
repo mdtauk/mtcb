@@ -10,6 +10,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minetrek.mdta.mtcb.Main;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockBase;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockDiagonalLeft;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockFacing;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockObj;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
@@ -30,7 +31,7 @@ public class InitBlocks
 	 */
 
 	// Test of OBJ block
-	public static final Block BLOCK_WALL_DIAG_LEFT = new BlockObj("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);
+	public static final Block BLOCK_WALL_DIAG_LEFT = new BlockDiagonalLeft("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);
 	//public static final Block BLOCK_WALL_45_LEFT = new BlockFacing("wall_45deg", Material.WOOD, Main.TAB_ENT, 1.0f, 0, SoundType.METAL);
 
 
