@@ -1,4 +1,5 @@
 {
+    "_comment": "Submodel works!!!!",
     "forge_marker": 1,
     "defaults": {
         "textures": {},
@@ -12,7 +13,8 @@
         ],
         "facing": {
             "north": {
-                "model": "mtcb:block_wall_diag_left.obj"
+                "model": "mtcb:block_wall_diag_left.obj",
+                "submodel": "mtcb:test001"
             },
             "south": {
                 "model": "mtcb:block_wall_diag_left.obj",

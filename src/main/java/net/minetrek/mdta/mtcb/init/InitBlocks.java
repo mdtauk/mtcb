@@ -32,7 +32,7 @@ public class InitBlocks
 
 	// Test of OBJ block
 	public static final Block BLOCK_WALL_DIAG_LEFT = new BlockDiagonalLeft("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);
-	//public static final Block BLOCK_WALL_45_LEFT = new BlockFacing("wall_45deg", Material.WOOD, Main.TAB_ENT, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_WALL_45_LEFT = new BlockDiagonalLeft("wall_45deg", Material.WOOD, Main.TAB_ENT);
 
 
 

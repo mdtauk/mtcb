@@ -40,104 +40,245 @@ import net.minetrek.mdta.mtcb.util.interfaces.IHasModel;
  */
 public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 {
-	/*-
-	 * B O U N D I N G   B O X   G O A L
-	 * 
-	 *                               
-	 * 1/0                 1/1       ┃
-	 * ╒═════════════════════╗     ━━╋━━        ╭───◂
-	 * │          A          ║       ┃          │ ╔════╤══════════╕     Z ┃
-	 * │                     ║       ▼          ▼ ║    │          │       ▼
-	 * ├──────┬────────┬─────╢                    ║    ├─────┬────┤       
-	 * │      │        │     ║                    ║    │     │    │        ╱
-	 * │      │   C    │     ║ Outer sides        ║    │     │    │     Y ╱ = Height
-	 * │      │        │  B  ║ for culling        ║    ├─────┘    │
-	 * │      └────────┤     ║                    ║    │          │      
-	 * │               │     ║                    ╙────┴──────────┘     X ━━━►
-	 * │               │     ║ The AABBs need to
-	 * └───────────────┴─────╜ rotate with the block
-	 * 0/0                0/1
-	 * 
-	 * Facing: North Align: Left units are 1 16th
-	 * 
-	 * A = 6 x 16 | B = 10 x 16 | C = 6 x 6 | D & E = 2 x 2
-	 */
-
 	private static double _unit = 1.0D / 16.0D;
+	private static double _unitFull = 1.0D;
 
 
 
 	public static final AxisAlignedBB AABB_FULL_CUBE = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+
+
+
 	@Nullable
 	public static final AxisAlignedBB NULL_AABB = null;
 
 
 
+	/*-
+	 *  Bounding Boxes - Block Facing NORTH
+	 * 
+	 *  ↑ X                      16, Y, 16
+	 *  ┌────────────────────────────┬───╖ 16
+	 *  │                            │   ║
+	 *  │                        ┌───┤   ║ 14
+	 *  │                        │   │   ║
+	 *  │                    ┌───┤   │   ║ 12
+	 *  │                    │   │   │   ║
+	 *  │                ┌───┤   │   │   ║ 10
+	 *  │                │   │   │   │   ║
+	 *  │           ┌────┤   │   │   │   ║ 8
+	 *  │           │  H │ G │ E │ C │ A ║
+	 *  │       ┌───┴────┴───┤   │   │   ║ 6
+	 *  │       │      F     │   │   │   ║
+	 *  │   ┌───┴────────────┴───┤   │   ║ 4
+	 *  │   │          D         │   │   ║
+	 *  ├───┴────────────────────┴───┤   ║ 2
+	 *  │              B             │   ║
+	 *  ╘════════════════════════════╧═══╝ 0
+	 *  0, Y, 0                        → Z
+	 */
 	protected static final AxisAlignedBB AABB_LEFT_NORTH_A = new AxisAlignedBB(
-			0.0D, 0.0D, _unit * 10, 
-			_unit * 16, _unit * 16, _unit * 16);
-
+			0.0D, 0.0D, _unit * 14, 
+			_unit * 16, _unitFull, _unit * 16);
+	
 	protected static final AxisAlignedBB AABB_LEFT_NORTH_B = new AxisAlignedBB(
 			0.0D, 0.0D, 0.0D, 
-			_unit * 6, _unit * 16, _unit * 10);
-
+			_unit * 2, _unitFull, _unit * 14);
+	
 	protected static final AxisAlignedBB AABB_LEFT_NORTH_C = new AxisAlignedBB(
-			_unit * 6, 0.0D, _unit * 4, 
-			_unit * 12, _unit * 16, _unit * 10);
-
-
-	/**
-	 * TODO: Add collision boxes for the block facing East
-	 */
-	protected static final AxisAlignedBB AABB_LEFT_EAST_A = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_LEFT_EAST_B = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_LEFT_EAST_C = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+			_unit * 2, 0.0D, _unit * 12, 
+			_unit * 14, _unitFull, _unit * 14);
 	
+	protected static final AxisAlignedBB AABB_LEFT_NORTH_D = new AxisAlignedBB(
+			_unit * 2, 0.0D, _unit * 2, 
+			_unit * 4, _unitFull, _unit * 12);
 	
-
-	protected static final AxisAlignedBB AABB_LEFT_SOUTH_A = new AxisAlignedBB( 
-			0.0D, 0.0D, 0.0D,																				
-			_unit * 16, _unit * 16, _unit * 6);
-
-	protected static final AxisAlignedBB AABB_LEFT_SOUTH_B = new AxisAlignedBB( 
-			_unit * 10, 0.0D, _unit * 6,																				
-			_unit * 16, _unit * 16, _unit * 16);
-
-	protected static final AxisAlignedBB AABB_LEFT_SOUTH_C = new AxisAlignedBB( 
-			_unit * 4, 0.0D, _unit * 6,
-			_unit * 10, _unit * 19, _unit * 12);
-
+	protected static final AxisAlignedBB AABB_LEFT_NORTH_E = new AxisAlignedBB(
+			_unit * 4, 0.0D, _unit * 10, 
+			_unit * 12, _unitFull, _unit * 12);
 	
-	
-	protected static final AxisAlignedBB AABB_LEFT_WEST_A = new AxisAlignedBB(
-			_unit * 10, 0.0D, 0.0D, 
-			_unit * 16, _unit * 16, _unit * 16);
-	protected static final AxisAlignedBB AABB_LEFT_WEST_B = new AxisAlignedBB(
-			0.0D, 0.0D, _unit * 10, 
-			_unit * 10, _unit * 16, _unit * 16);
-	protected static final AxisAlignedBB AABB_LEFT_WEST_C = new AxisAlignedBB(
+	protected static final AxisAlignedBB AABB_LEFT_NORTH_F = new AxisAlignedBB(
 			_unit * 4, 0.0D, _unit * 4, 
-			_unit * 10, _unit * 16, _unit * 10);
+			_unit * 6, _unitFull, _unit * 10);
+	
+	protected static final AxisAlignedBB AABB_LEFT_NORTH_G = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit * 8, 
+			_unit * 10, _unitFull, _unit * 10);
+	
+	protected static final AxisAlignedBB AABB_LEFT_NORTH_H = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit * 6, 
+			_unit * 8, _unitFull, _unit * 8);
 
-	/**/
 
-	/*
-	protected static final AxisAlignedBB AABB_RIGHT_NORTH_A = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_NORTH_B = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_NORTH_C = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
-	protected static final AxisAlignedBB AABB_RIGHT_EAST_A = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_EAST_B = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_EAST_C = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+	/*-
+	 *  Bounding Boxes - Block Facing EAST
+	 * 
+	 *  ↑ X                      16, Y, 16
+	 *  ╓───┬────────────────────────────┐ 16
+	 *  ║   │                            │
+	 *  ║   ├───┐                        │ 14
+	 *  ║   │   │                        │
+	 *  ║   │   ├───┐                    │ 12
+	 *  ║   │   │   │                    │
+	 *  ║   │   │   ├───┐                │ 10
+	 *  ║   │   │   │   │                │
+	 *  ║   │   │   │   ├───┐            │ 8
+	 *  ║ B │ D │ F │ G │ H │            │
+	 *  ║   │   ├───┴───┴───┴────┐       │ 6
+	 *  ║   │   │         E      │       │
+	 *  ║   ├───┴────────────────┴───┐   │ 4
+	 *  ║   │             C          │   │
+	 *  ╟───┴────────────────────────┴───┤ 2
+	 *  ║                 A              │
+	 *  ╚════════════════════════════════╛ 0
+	 *  0, Y, 0                        → Z
+	 */
+	protected static final AxisAlignedBB AABB_LEFT_EAST_A = new AxisAlignedBB(
+			0.0D, 0.0D, 0.0D, 
+			_unit * 2, _unitFull, _unit * 16);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_B = new AxisAlignedBB(
+			_unit * 2, 0.0D, _unit * 2, 
+			_unit * 16, _unitFull, _unit * 2);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_C = new AxisAlignedBB(
+			_unit * 2, 0.0D, _unit * 2, 
+			_unit * 4, _unitFull, _unit * 14);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_D = new AxisAlignedBB(
+			_unit * 4, 0.0D, _unit * 2, 
+			_unit * 14, _unitFull, _unit * 4);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_E = new AxisAlignedBB(
+			_unit * 4, 0.0D, _unit * 4, 
+			_unit * 6, _unitFull, _unit * 12);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_F = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit * 4, 
+			_unit * 12, _unitFull, _unit * 6);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_G = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit * 6, 
+			_unit * 10, _unitFull, _unit * 10);
+	
+	protected static final AxisAlignedBB AABB_LEFT_EAST_H = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit* 8, 
+			_unit * 8, _unitFull, _unit * 10);
 
-	protected static final AxisAlignedBB AABB_RIGHT_SOUTH_A = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_SOUTH_B = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_SOUTH_C = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
-	protected static final AxisAlignedBB AABB_RIGHT_WEST_A = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_WEST_B = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	protected static final AxisAlignedBB AABB_RIGHT_WEST_C = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-	*/
+
+	/*-
+	 *  Bounding Boxes - Block Facing SOUTH
+	 * 
+	 *  ↑ X                      16, Y, 16
+	 *  ╔═══╤════════════════════════════╕ 16
+	 *  ║   │             B              │
+	 *  ║   ├───┬────────────────────┬───┤ 14
+	 *  ║   │   │         D          │   │
+	 *  ║   │   ├───┬────────────┬───┘   │ 12
+	 *  ║   │   │   │     F      │       │
+	 *  ║   │   │   ├───┬────┬───┘       │ 10
+	 *  ║ A │ C │ E │ G │ H  │           │
+	 *  ║   │   │   │   ├────┘           │ 8
+	 *  ║   │   │   │   │                │
+	 *  ║   │   │   ├───┘                │ 6
+	 *  ║   │   │   │                    │
+	 *  ║   │   ├───┘                    │ 4
+	 *  ║   │   │                        │
+	 *  ║   ├───┘                        │ 2
+	 *  ║   │                            │
+	 *  ╙───┴────────────────────────────┘ 0
+	 *  0, Y, 0                        → Z
+	 */
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_A = new AxisAlignedBB(
+			0.0D, 0.0D, 0.0D, 
+			_unit * 16, _unitFull, _unit * 2);
+	
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_B = new AxisAlignedBB(
+			_unit * 14, 0.0D, _unit * 2, 
+			_unit * 16, _unitFull, _unit * 16);
+	
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_C = new AxisAlignedBB(
+			_unit * 2, 0.0D, _unit * 2, 
+			_unit * 14, _unitFull, _unit * 4);
+
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_D = new AxisAlignedBB(
+			_unit * 12, 0.0D, _unit * 4, 
+			_unit * 14, _unitFull, _unit * 14);
+
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_E = new AxisAlignedBB(
+			_unit * 4, 0.0D, _unit * 4, 
+			_unit * 12, _unitFull, _unit * 6);
+
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_F = new AxisAlignedBB(
+			_unit * 10, 0.0D, _unit * 6, 
+			_unit * 12, _unitFull, _unit * 12);
+
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_G = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit * 6, 
+			_unit * 10, _unitFull, _unit * 8);
+
+	protected static final AxisAlignedBB AABB_LEFT_SOUTH_H = new AxisAlignedBB(
+			_unit * 8, 0.0D, _unit * 8, 
+			_unit * 10, _unitFull, _unit * 10);
+
+
+
+	/*-
+	 *  Bounding Boxes - Block Facing West
+	 * 
+	 *  ↑ X                      16, Y, 16
+	 *  ╒════════════════════════════════╗ 16
+	 *  │                  A             ║
+	 *  ├────┬───────────────────────┬───╢ 14
+	 *  │    │             C         │   ║
+	 *  │    └───┬───────────────┬───┤   ║ 12
+	 *  │        │         E     │   │   ║
+	 *  │        └───┬───────┬───┤   │   ║ 10
+	 *  │            │     G │   │   │   ║
+	 *  │            └───┬───┤   │   │   ║ 8
+	 *  │                │ H │ F │ D │ B ║
+	 *  │                └───┤   │   │   ║ 6
+	 *  │                    │   │   │   ║
+	 *  │                    └───┤   │   ║ 4
+	 *  │                        │   │   ║
+	 *  │                        └───┤   ║ 2
+	 *  │                            │   ║
+	 *  └────────────────────────────┴───╜ 0
+	 *  0, Y, 0                        → Z
+	 */
+	protected static final AxisAlignedBB AABB_LEFT_WEST_A = new AxisAlignedBB(
+			_unit * 14, 0.0D, 0.0D, 
+			_unit * 16, _unitFull, _unit * 16);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_B = new AxisAlignedBB(
+			0.0D, 0.0D, _unit * 14, 
+			_unit * 14,	_unitFull, _unit * 16);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_C = new AxisAlignedBB(
+			_unit * 12, 0.0D, _unit * 2, 
+			_unit * 14,	_unitFull, _unit * 14);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_D = new AxisAlignedBB(
+			_unit * 2, 0.0D, _unit * 12, 
+			_unit * 12,	_unitFull, _unit * 14);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_E = new AxisAlignedBB(
+			_unit * 10, 0.0D, _unit * 4, 
+			_unit * 12,	_unitFull, _unit * 12);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_F = new AxisAlignedBB(
+			_unit * 4, 0.0D, _unit * 10, 
+			_unit * 10,	_unitFull, _unit * 12);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_G = new AxisAlignedBB(
+			_unit * 8, 0.0D, _unit * 6,
+			_unit * 10,	_unitFull, _unit * 10);
+
+	protected static final AxisAlignedBB AABB_LEFT_WEST_H = new AxisAlignedBB(
+			_unit * 6, 0.0D, _unit * 8, 
+			_unit * 8, _unitFull, _unit * 10);
 
 
 
@@ -149,40 +290,128 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 	}
 
 
+
 	/**
 	 * TODO: Switch out the collision to fit the facing direction
+	 * 
+	 * Adds collision boxes to the Block's CollisionBoxes for interacting with the
+	 * player
 	 */
 	@Override
-	public void addCollisionBoxToList(IBlockState iBlockState, World worldIn, BlockPos pos, AxisAlignedBB entityBox,
-			List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean p_185477_7_)
+	public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox,
+			List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean isActualState)
 	{
-		IBlockState state = this.getActualState(iBlockState, worldIn, pos);
+		if (!isActualState)
+		{
+			state = this.getActualState(state, worldIn, pos);
+		}
 
-		addCollisionBoxToList(pos, entityBox, collidingBoxes, AABB_LEFT_WEST_A);
-		addCollisionBoxToList(pos, entityBox, collidingBoxes, AABB_LEFT_WEST_B);
-		addCollisionBoxToList(pos, entityBox, collidingBoxes, AABB_LEFT_WEST_C);
+		// Repeat this method for each collision box in a list.
+		for (AxisAlignedBB axisalignedbb : getCollisionBoxList(state))
+		{
+			addCollisionBoxToList(pos, entityBox, collidingBoxes, axisalignedbb);
+		}
 	}
 
 
 
+	/*
+	 * Create and return a list of AxisAlignedBoundingBoxes based on the direction
+	 * the block is facing.
+	 */
 	private static List<AxisAlignedBB> getCollisionBoxList(IBlockState state)
-	{
+	{		
 		List<AxisAlignedBB> list = Lists.<AxisAlignedBB>newArrayList();
-	    list.add(AABB_LEFT_WEST_A);
-		list.add(AABB_LEFT_WEST_B);
-		list.add(AABB_LEFT_WEST_C);
 
+		switch ((EnumFacing)state.getValue(FACING))
+		{
+			case WEST:
+			default:
+			{
+				list.add(AABB_LEFT_WEST_A);
+				list.add(AABB_LEFT_WEST_B);
+				list.add(AABB_LEFT_WEST_C);
+				list.add(AABB_LEFT_WEST_D);
+				list.add(AABB_LEFT_WEST_E);
+				list.add(AABB_LEFT_WEST_F);
+				list.add(AABB_LEFT_WEST_G);
+				list.add(AABB_LEFT_WEST_H);
+				break;
+			}
+			case NORTH:
+			{
+				list.add(AABB_LEFT_NORTH_A);
+				list.add(AABB_LEFT_NORTH_B);
+				list.add(AABB_LEFT_NORTH_C);
+				list.add(AABB_LEFT_NORTH_D);
+				list.add(AABB_LEFT_NORTH_E);
+				list.add(AABB_LEFT_NORTH_F);
+				list.add(AABB_LEFT_NORTH_G);
+				list.add(AABB_LEFT_NORTH_H);
+				break;
+			}
+			case SOUTH:
+			{
+				list.add(AABB_LEFT_SOUTH_A);
+				list.add(AABB_LEFT_SOUTH_B);
+				list.add(AABB_LEFT_SOUTH_C);
+				list.add(AABB_LEFT_SOUTH_D);
+				list.add(AABB_LEFT_SOUTH_E);
+				list.add(AABB_LEFT_SOUTH_F);
+				list.add(AABB_LEFT_SOUTH_G);
+				list.add(AABB_LEFT_SOUTH_H);
+				break;
+			}
+			case EAST:
+			{
+				list.add(AABB_LEFT_EAST_A);
+				list.add(AABB_LEFT_EAST_B);
+				list.add(AABB_LEFT_EAST_C);
+				list.add(AABB_LEFT_EAST_D);
+				list.add(AABB_LEFT_EAST_E);
+				list.add(AABB_LEFT_EAST_F);
+				list.add(AABB_LEFT_EAST_G);
+				list.add(AABB_LEFT_EAST_H);
+				break;
+			}
+		}	
+		
 		return list;
 	}
 
 
 
+	/*
+	 * Get the bounding box to be used to display the visual highlight box around
+	 * the block
+	 * 
+	 * @see
+	 * net.minecraft.block.Block#getSelectedBoundingBox(net.minecraft.block.state.
+	 * IBlockState, net.minecraft.world.World, net.minecraft.util.math.BlockPos)
+	 */
 	@Override
 	public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos)
 	{
-		//return AABB_LEFT_WEST_C.offset(pos);
-		
-		return AABB_FULL_CUBE.offset(pos);
+		switch ((EnumFacing)state.getValue(FACING))
+		{
+			case WEST:
+			default:
+			{
+				return AABB_FULL_CUBE.offset(pos);
+			}
+			case NORTH:
+			{
+				return AABB_LEFT_NORTH_C.offset(pos);
+			}
+			case SOUTH:
+			{
+				return AABB_FULL_CUBE.offset(pos);
+			}
+			case EAST:
+			{
+				return AABB_FULL_CUBE.offset(pos);
+			}
+		}
 	}
 
 
@@ -191,21 +420,22 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 	 * Ray traces through the blocks collision from start vector to end vector
 	 * returning a ray trace hit.
 	 */
+
 	@Override
 	@Nullable
 	public RayTraceResult collisionRayTrace(IBlockState blockState, World worldIn, BlockPos pos, Vec3d start, Vec3d end)
 	{
-		List<RayTraceResult> list = Lists.<RayTraceResult>newArrayList();
+		List<RayTraceResult> listRT = Lists.<RayTraceResult>newArrayList();
 
-		for (AxisAlignedBB axisalignedbb : getCollisionBoxList(this.getActualState(blockState, worldIn, pos)))
+		for (AxisAlignedBB axisalignedbb : getCollisionBoxList(blockState))
 		{
-			list.add(this.rayTrace(pos, start, end, axisalignedbb));
+			listRT.add(this.rayTrace(pos, start, end, axisalignedbb));
 		}
 
 		RayTraceResult raytraceresult1 = null;
 		double d1 = 0.0D;
 
-		for (RayTraceResult raytraceresult : list)
+		for (RayTraceResult raytraceresult : listRT)
 		{
 			if (raytraceresult != null)
 			{
@@ -235,9 +465,9 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 
 
 
-	public boolean isFullCube(IBlockState state)
-	{
-		return false;
-	}
+	//public boolean isFullCube(IBlockState state)
+	//{
+		//return false;
+	//}
 
 }

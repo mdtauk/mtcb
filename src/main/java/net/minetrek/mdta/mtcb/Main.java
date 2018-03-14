@@ -44,7 +44,9 @@ public class Main
 	public static Main instance;
 
 
-
+	/**
+	 * TODO: Shorten the labels for the tabs to better fit the space
+	 */
 	// Create instances of our Creative Tabs
 	public static final CreativeTabs TAB_ENT = new CTab("tab_ent", Items.IRON_HOE, "entbg.png", false);
 	public static final CreativeTabs TAB_DSC = new CTab("tab_dsc", Items.IRON_AXE, "dscbg.png", false);
