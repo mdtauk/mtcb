@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "mtcb:items/block_wall_diag_left"
-    }
-}

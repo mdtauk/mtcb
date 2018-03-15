@@ -1,8 +1,9 @@
 {
+    "parent": "block/cube",
     "__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
     "textures": {
-        "particle": "mtcb:blocks/tng/corridors/tng_corridor_screen_middle_diag",
-        "tex_main": "mtcb:blocks/tng/corridors/tng_corridor_screen_middle_diag"
+        "particle": "#tex_particle",
+        "tex_main": "#tex_main"
     },
     "elements": [    
         {
@@ -28,7 +29,7 @@
             "to": [ 0, 16, 22.63 ],
             "rotation": { "origin": [ 0, 0, 0 ], "axis": "y", "angle": 45 },
             "faces": {
-                "east": { "uv": [ 0, 16, 11, 8 ], "texture": "#tex_main", "rotation": 180 }
+                "east": { "uv": [ 11, 16, 0, 8 ], "texture": "#tex_main", "rotation": 180 }
             }
         }
     ]

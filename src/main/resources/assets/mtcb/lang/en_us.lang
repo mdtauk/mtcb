@@ -60,6 +60,16 @@ tile.block_tng_corridor_screen_middle_split.name=TNG Corridor | Screen | Middle 
 tile.block_tng_corridor_screen_middle_split_alert.name=TNG Corridor | Screen | Middle | Split | Red Alert
 tile.block_tng_corridor_screen_btm_split.name=TNG Corridor | Screen | Bottom | Split
 //
+tile.block_tng_corridor_screen_btm_diag.name=TNG Corridor | Screen | Bottom | Diagonal
+tile.block_tng_corridor_screen_middle_diag.name=TNG Corridor | Screen | Middle | Diagonal
+tile.block_tng_corridor_screen_middle_alert_diag.name=TNG Corridor | Screen | Middle | Red Alert | Diagonal
+tile.block_tng_corridor_screen_top_diag.name=TNG Corridor | Screen | Top | Diagonal
+/-/
+tile.block_tng_corridor_screen_btm_split_diag.name=TNG Corridor | Screen | Bottom | Split | Diagonal
+tile.block_tng_corridor_screen_middle_split_diag.name=TNG Corridor | Screen | Middle | Split | Diagonal
+tile.block_tng_corridor_screen_middle_split_alert_diag.name=TNG Corridor | Screen | Middle | Red Alert | Split | Diagonal
+tile.block_tng_corridor_screen_top_split_diag.name=TNG Corridor | Screen | Top | Split | Diagonal
+//
 /**/
 /*  
  *  TNG Corridor with Bulkheads Blocks
@@ -83,6 +93,15 @@ tile.block_tng_corridor_bulk_middle_split.name=TNG Corridor | Bulkhead | Middle 
 tile.block_tng_corridor_bulk_middle_split_alt.name=TNG Corridor | Bulkhead | Middle | Split | No Label
 tile.block_tng_corridor_bulk_btm_split.name=TNG Corridor | Bulkhead | Bottom | Split
 tile.block_tng_corridor_bulk_btm_split_alt.name=TNG Corridor | Bulkhead | Bottom | Split | No Label
+//
+tile.block_tng_corridor_bulk_btm_diag.name=TNG Corridor | Bulkhead | Bottom | Diagonal
+tile.block_tng_corridor_bulk_middle_diag.name=TNG Corridor | Bulkhead | Middle | Diagonal
+tile.block_tng_corridor_bulk_top_diag.name=TNG Corridor | Bulkhead | Top | Diagonal
+/-/
+tile.block_tng_corridor_bulk_btm_split_diag.name=TNG Corridor | Bulkhead | Bottom | Split | Diagonal
+tile.block_tng_corridor_bulk_middle_split_diag.name=TNG Corridor | Bulkhead | Middle | Split | Diagonal
+tile.block_tng_corridor_bulk_top_split_diag.name=TNG Corridor | Bulkhead | Top | Split | Diagonal
+//
 /**/
 /*  
  *  TNG Doorway Tan Blocks
