@@ -1,33 +1,8 @@
 {
-    "_comment": "Submodel works!!!!",
-    "forge_marker": 1,
-    "defaults": {
-        "textures": {},
-        "custom": { "flip-v": true },
-        "model": "mtcb:block_wall_diag_left.obj"
-    },
     "variants": {
-        "normal": [{}],
-        "inventory": [
-            { "transform": "forge:default-block" }
-        ],
-        "facing": {
-            "north": {
-                "model": "mtcb:block_wall_diag_left.obj",
-                "submodel": "mtcb:test001"
-            },
-            "south": {
-                "model": "mtcb:block_wall_diag_left.obj",
-                "y": 180
-            },
-            "west": {
-                "model": "mtcb:block_wall_diag_left.obj",
-                "y": 270
-            },
-            "east": {
-                "model": "mtcb:block_wall_diag_left.obj",
-                "y": 90
-            }
-        }
+        "facing=north": { "model": "mtcb:test001" },
+        "facing=south": { "model": "mtcb:test001", "y": 180 },
+        "facing=west":  { "model": "mtcb:test001", "y": 270 },
+        "facing=east":  { "model": "mtcb:test001", "y": 90 }
     }
 }

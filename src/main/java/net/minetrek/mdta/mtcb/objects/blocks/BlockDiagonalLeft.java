@@ -9,12 +9,17 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Lists;
 
 import net.minecraft.block.BlockStairs;
+import net.minecraft.block.BlockStairs.EnumHalf;
+import net.minecraft.block.BlockStairs.EnumShape;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
@@ -292,8 +297,6 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 
 
 	/**
-	 * TODO: Switch out the collision to fit the facing direction
-	 * 
 	 * Adds collision boxes to the Block's CollisionBoxes for interacting with the
 	 * player
 	 */
@@ -378,9 +381,9 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 		
 		return list;
 	}
-
-
-
+	
+		
+	
 	/*
 	 * Get the bounding box to be used to display the visual highlight box around
 	 * the block
@@ -452,8 +455,34 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 		return raytraceresult1;
 	}
 
+	
+	
+	@Override
+	public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) 
+	{
+		IBlockState state = super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand);
+			
+		
+		return state.withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+	}
 
+	
+	
+	/**
+	 * Determines if the faces of THIS block should cull when placed beside other blocks
+	 */
+	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face)
+    {
+		if (net.minecraftforge.common.ForgeModContainer.disableStairSlabCulling)
+            return super.doesSideBlockRendering(state, world, pos, face);
 
+        if ( state.isOpaqueCube() )
+            return true;
+        		
+		return false;
+    }
+	
+	
 	/**
 	 * Used to determine ambient occlusion and culling when rebuilding chunks for
 	 * render
@@ -465,9 +494,9 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 
 
 
-	//public boolean isFullCube(IBlockState state)
-	//{
-		//return false;
-	//}
+	public boolean isFullCube(IBlockState state)
+	{
+		return false;
+	}
 
 }

@@ -31,8 +31,9 @@ public class InitBlocks
 	 */
 
 	// Test of OBJ block
-	public static final Block BLOCK_WALL_DIAG_LEFT = new BlockDiagonalLeft("block_wall_diag_left", Material.WOOD, Main.TAB_ENT);
-	public static final Block BLOCK_WALL_45_LEFT = new BlockDiagonalLeft("wall_45deg", Material.WOOD, Main.TAB_ENT);
+	public static final Block BLOCK_WALL_DIAG_LEFT = new BlockDiagonalLeft("block_wall_diag_left", Material.IRON, Main.TAB_ENT);
+	public static final Block BLOCK_WALL_45_LEFT = new BlockDiagonalLeft("wall_45deg", Material.IRON, Main.TAB_ENT);
+	public static final Block BLOCK_WALL_45_LEFT_TOP = new BlockDiagonalLeft("wall_45deg2", Material.IRON, Main.TAB_ENT);
 
 
 

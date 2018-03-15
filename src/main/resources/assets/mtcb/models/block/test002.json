@@ -1,8 +1,8 @@
 {
     "__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
     "textures": {
-        "particle": "mtcb:blocks/tng/corridors/tng_corridor_screen_btm_diag",
-        "tex_main": "mtcb:blocks/tng/corridors/tng_corridor_screen_btm_diag"
+        "particle": "mtcb:blocks/tng/corridors/tng_corridor_screen_middle_diag",
+        "tex_main": "mtcb:blocks/tng/corridors/tng_corridor_screen_middle_diag"
     },
     "elements": [    
         {
