@@ -1,0 +1,6 @@
+newmtl _tex
+
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+
+map_Kd mtcb:blocks/tng/tng_core_anim

@@ -13,6 +13,7 @@ import net.minetrek.mdta.mtcb.objects.blocks.BlockBase;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockDiagonalLeft;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockFacing;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockObj;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockTNGCore;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
 
 
@@ -29,6 +30,9 @@ public class InitBlocks
 	 * Blocks should be added in this order: BOTTOM | MIDDLE | TOP
 	 * 
 	 */
+	public static final Block BLOCK_TNG_CORE_A = new BlockTNGCore("block_tng_core_a", Material.IRON, Main.TAB_ENT);
+	public static final Block BLOCK_TNG_CORE_B = new BlockTNGCore("block_tng_core_b", Material.IRON, Main.TAB_ENT);
+	public static final Block BLOCK_TNG_CORE_C = new BlockObj("block_tng_core_c", Material.IRON, Main.TAB_ENT, 1.0f, 0, SoundType.METAL);
 	
 
 

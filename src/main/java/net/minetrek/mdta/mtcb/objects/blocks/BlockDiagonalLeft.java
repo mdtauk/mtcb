@@ -457,17 +457,6 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 
 	
 	
-	@Override
-	public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) 
-	{
-		IBlockState state = super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand);
-			
-		
-		return state.withProperty(FACING, placer.getHorizontalFacing().getOpposite());
-	}
-
-	
-	
 	/**
 	 * Determines if the faces of THIS block should cull when placed beside other blocks
 	 */
@@ -481,6 +470,7 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
         		
 		return false;
     }
+	
 	
 	
 	/**
