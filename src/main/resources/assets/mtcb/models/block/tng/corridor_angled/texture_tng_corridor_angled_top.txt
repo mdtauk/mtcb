@@ -1,0 +1,7 @@
+# Blender MTL File: 'tng_angled_corridor.blend'
+# Material Count: 1
+
+newmtl tex_top
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/angled/tng_corridor_angled_top_flush

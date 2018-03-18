@@ -26,7 +26,9 @@ public class BlockTNGCore extends BlockObj implements IHasModel
 		super(name, material, tab);
 		
 		setLightLevel(1f);
-		setLightOpacity(15);
+		setLightOpacity(0);
+		
+		this.useNeighborBrightness = true;
 	}
 	
 	

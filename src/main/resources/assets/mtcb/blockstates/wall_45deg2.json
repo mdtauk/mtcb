@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "mtcb:test003" },
-        "facing=south": { "model": "mtcb:test003", "y": 180 },
-        "facing=west":  { "model": "mtcb:test003", "y": 270 },
-        "facing=east":  { "model": "mtcb:test003", "y": 90 }
-    }
-}

@@ -1,5 +1,6 @@
 {
     "parent": "block/cube_all",
+    "ambientocclusion": false,
     "textures": {
         "all": "mtcb:blocks/tng/tng_wall_tan"
     }

@@ -1,0 +1,45 @@
+{
+	"__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
+	"elements": [ 	 
+		{
+			"__comment": "face_back",
+			"from": [ 16, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_back", "cullface": "east" }
+			}
+		},
+		{
+			"__comment": "face_south",
+			"from": [ 0, 0, 16 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_sides", "cullface": "south" }
+			}
+		},
+		{
+			"__comment": "face_north",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 0 ],
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_sides", "cullface": "north" }
+			}
+		},
+		{
+			"__comment": "face_top",
+			"from": [ 0, 16, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_top", "cullface": "up", "rotation": 90 }
+			}
+		},
+		{
+            "__comment": "face_btm",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 0, 16 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_btm", "cullface": "down", "rotation": 90 }
+            }
+        }
+	]
+}
