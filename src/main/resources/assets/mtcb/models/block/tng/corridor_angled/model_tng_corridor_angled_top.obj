@@ -1,6 +1,4 @@
-# Blender v2.76 (sub 0) OBJ File: 'tng_angled_corridor.blend'
-# www.blender.org
-mtllib texture_tng_corridor_angled_top.txt
+mtllib texture_tng_corridor_angled_middle.txt
 o corridor_top_Cube.002
 v 0.650000 0.000000 1.000000
 v 0.650000 0.000000 0.000000

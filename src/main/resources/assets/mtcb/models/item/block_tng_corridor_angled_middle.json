@@ -1,6 +1,27 @@
 {
-    "parent": "item/generated",
+    "parent": "block/cube",
+    "__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
     "textures": {
-        "layer0": "mtcb:blocks/test_c"
+        "tex_brace": "mtcb:blocks/tng/corridors/tng_corridor_brace",
+        "tex_main": "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_middle_flush"
+    },
+     "elements": [    
+        {
+            "__comment": "slope",
+            "from": [ 9, 0, 0 ],
+            "to": [ 9, 17.28, 16 ],
+            "rotation": { "origin": [ 9, 0, 16 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "west": { "uv": [ 0, 16, 16, 0 ], "texture": "#tex_main", "rotation": 180 },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_main", "cullface": "down" }
+            }
+        }
+    ],
+    "display": {
+        "gui": {
+            "rotation": [ 10, 45, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.625, 0.625, 0.625 ]
+        }
     }
 }

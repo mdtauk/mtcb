@@ -2,7 +2,10 @@
     "forge_marker": 1,
     "defaults": {
         "custom": { "flip-v": true },
-        "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj"        
+        "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj",
+        "textures" : {
+            "#tex_middle" : "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_middle_right"
+        }   
       },
     "variants": {
         "normal": [{}],

@@ -1,6 +1,26 @@
 {
-    "parent": "item/generated",
+    "parent": "mtcb:item/item_corridor_angled",
+    "__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
     "textures": {
-        "layer0": "mtcb:blocks/test_r"
+        "tex_main": "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_btm_flush"
+    },
+    "elements": [
+        {
+            "__comment": "slope",
+            "from": [ -6, 0, 0 ],
+            "to": [ 16, 0, 16 ],
+            "rotation": { "origin": [ 16, 0, 16 ], "axis": "z", "angle": -45 },
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_main", "rotation": 270 },
+                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_main", "cullface": "down", "rotation": 270 }
+            }
+        }
+    ],
+    "display": {
+        "gui": {
+            "rotation": [ 30, 225, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.65, 0.65, 0.65 ]
+            }
     }
 }

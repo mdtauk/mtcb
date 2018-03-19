@@ -102,6 +102,27 @@ tile.block_tng_corridor_bulk_btm_split_diag.name=TNG Corridor | Bulkhead | Botto
 tile.block_tng_corridor_bulk_middle_split_diag.name=TNG Corridor | Bulkhead | Middle | Split | Diagonal
 tile.block_tng_corridor_bulk_top_split_diag.name=TNG Corridor | Bulkhead | Top | Split | Diagonal
 //
+/* TNG Angled Corridor Blocks */
+tile.block_tng_corridor_angled_btm.name=TNG Corridor | Angled | Bottom
+tile.block_tng_corridor_angled_btm_left.name=TNG Corridor | Angled | Bottom | Left
+tile.block_tng_corridor_angled_btm_right.name=TNG Corridor | Angled | Bottom | Right
+tile.block_tng_corridor_angled_btm_split.name=TNG Corridor | Angled | Bottom | Split
+//
+tile.block_tng_corridor_angled_middle.name=TNG Corridor | Angled | Middle
+tile.block_tng_corridor_angled_middle_left.name=TNG Corridor | Angled | Middle | Left
+tile.block_tng_corridor_angled_middle_right.name=TNG Corridor | Angled | Middle | Right
+tile.block_tng_corridor_angled_middle_split.name=TNG Corridor | Angled | Middle | Split
+//
+tile.block_tng_corridor_angled_middle_alert.name=TNG Corridor | Angled | Middle | Red Alert
+tile.block_tng_corridor_angled_middle_left_alert.name=TNG Corridor | Angled | Middle | Left | Red Alert
+tile.block_tng_corridor_angled_middle_right_alert.name=TNG Corridor | Angled | Middle | Right | Red Alert
+tile.block_tng_corridor_angled_middle_split_alert.name=TNG Corridor | Angled | Middle | Split | Red Alert
+//
+tile.block_tng_corridor_angled_top.name=TNG Corridor | Angled | Top
+tile.block_tng_corridor_angled_top_left.name=TNG Corridor | Angled | Top | Left
+tile.block_tng_corridor_angled_top_right.name=TNG Corridor | Angled | Top | Right
+tile.block_tng_corridor_angled_top_split.name=TNG Corridor | Angled | Top | Split
+//
 /**/
 /*  
  *  TNG Doorway Tan Blocks

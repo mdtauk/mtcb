@@ -4,7 +4,7 @@
         "custom": { "flip-v": true },
         "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj",
         "textures" : {
-            "#tex_middle" : "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_middle_left"
+            "#tex_middle" : "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_middle_right_alert"
         }   
       },
     "variants": {
@@ -18,7 +18,7 @@
                 "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj",
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_left_middle",
+                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_right_middle",
                         "y": 180 ,
                         "flip-v": true 
                         }
@@ -29,7 +29,7 @@
                 "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj",                
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_left_middle",
+                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_right_middle",
                         "y": 180 ,
                         "flip-v": true 
                         }
@@ -40,7 +40,7 @@
                 "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj",                
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_left_middle",
+                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_right_middle",
                         "y": 180 ,
                         "flip-v": true 
                         }
@@ -51,7 +51,7 @@
                 "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_middle.obj",                
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_left_middle",
+                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_right_middle",
                         "y": 180 ,
                         "flip-v": true 
                         }
