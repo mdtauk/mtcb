@@ -9,6 +9,7 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Lists;
 
 import net.minecraft.block.BlockStairs;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockStairs.EnumHalf;
 import net.minecraft.block.BlockStairs.EnumShape;
 import net.minecraft.block.material.Material;
@@ -17,6 +18,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -30,6 +32,8 @@ import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minetrek.mdta.mtcb.Main;
+import net.minetrek.mdta.mtcb.init.InitBlocks;
+import net.minetrek.mdta.mtcb.init.InitItems;
 import net.minetrek.mdta.mtcb.util.References;
 import net.minetrek.mdta.mtcb.util.interfaces.IHasModel;
 
@@ -286,13 +290,49 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 			_unit * 8, _unitFull, _unit * 10);
 
 
-
+	// Basic constructor variant
+	/**
+	 * 
+	 * @param name  Sets the Unlocalised and Registry name for the BlockBase Block
+	 * 
+	 * @param material  Sets the Material type the block should inherit from
+	 * 
+	 * @param tab  Sets which Creative Tab the block should be grouped into for the Creative sMode Inventory
+	 */
 	public BlockDiagonalLeft(String name, Material material, CreativeTabs tab)
 	{
 		super(name, material, tab);
 
 		this.useNeighborBrightness = true;
 	}
+	
+	
+	
+	// Advanced constructor variant
+	/**
+	 * 
+	 * @param name  Sets the Unlocalised and Registry name for the BlockBase Block
+	 * 
+	 * @param material  Sets the Material type the block should inherit from
+	 * 
+	 * @param tab  Sets which Creative Tab the block should be grouped into for the Creative Mode Inventory
+	 * 
+	 * @param lightLevel  Sets the lightLevel emitted by the block - float value between 0-1f (n/16)
+	 * 
+	 * @param lightOpacity  Sets the lightOpacity value, to prevent light passing through - int value
+	 * 
+	 * @param sound  Sets the type of sounds this block makes
+	 */
+	public BlockDiagonalLeft(String name, Material material, CreativeTabs tab, float lightLevel, int lightOpacity, SoundType sound)
+	{
+		super(name, material, tab);	
+		
+		setLightLevel(lightLevel);
+		setLightOpacity(lightOpacity);
+		setSoundType(sound);
+		
+		this.useNeighborBrightness = true;
+		}
 
 
 

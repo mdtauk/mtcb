@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mtcb:tng/room_pale/block_tng_room_pale_top_diag" },
+        "facing=south": { "model": "mtcb:tng/room_pale/block_tng_room_pale_top_diag", "y": 180 },
+        "facing=west":  { "model": "mtcb:tng/room_pale/block_tng_room_pale_top_diag", "y": 270 },
+        "facing=east":  { "model": "mtcb:tng/room_pale/block_tng_room_pale_top_diag", "y": 90 }
+    }
+}

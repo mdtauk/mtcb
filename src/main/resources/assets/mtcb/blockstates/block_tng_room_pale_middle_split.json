@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "mtcb:block_tng_room_pale_middle_split" },
-        "facing=south": { "model": "mtcb:block_tng_room_pale_middle_split", "y": 180 },
-        "facing=west":  { "model": "mtcb:block_tng_room_pale_middle_split", "y": 270 },
-        "facing=east":  { "model": "mtcb:block_tng_room_pale_middle_split", "y": 90 }
+        "facing=north": { "model": "mtcb:tng/room_pale/block_tng_room_pale_middle_split" },
+        "facing=south": { "model": "mtcb:tng/room_pale/block_tng_room_pale_middle_split", "y": 180 },
+        "facing=west":  { "model": "mtcb:tng/room_pale/block_tng_room_pale_middle_split", "y": 270 },
+        "facing=east":  { "model": "mtcb:tng/room_pale/block_tng_room_pale_middle_split", "y": 90 }
     }
 }

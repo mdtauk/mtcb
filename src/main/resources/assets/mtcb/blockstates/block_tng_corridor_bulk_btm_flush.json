@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "mtcb:block_tng_corridor_bulk_btm_flush" },
-        "facing=south": { "model": "mtcb:block_tng_corridor_bulk_btm_flush", "y": 180 },
-        "facing=west":  { "model": "mtcb:block_tng_corridor_bulk_btm_flush", "y": 270 },
-        "facing=east":  { "model": "mtcb:block_tng_corridor_bulk_btm_flush", "y": 90 }
+        "facing=north": { "model": "mtcb:tng/corridor_bulk/block_tng_corridor_bulk_btm_flush" },
+        "facing=south": { "model": "mtcb:tng/corridor_bulk/block_tng_corridor_bulk_btm_flush", "y": 180 },
+        "facing=west":  { "model": "mtcb:tng/corridor_bulk/block_tng_corridor_bulk_btm_flush", "y": 270 },
+        "facing=east":  { "model": "mtcb:tng/corridor_bulk/block_tng_corridor_bulk_btm_flush", "y": 90 }
     }
 }

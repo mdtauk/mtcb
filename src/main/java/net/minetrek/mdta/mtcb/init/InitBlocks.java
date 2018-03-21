@@ -30,13 +30,9 @@ public class InitBlocks
 	 * Blocks should be added in this order: BOTTOM | MIDDLE | TOP
 	 * 
 	 */
-	public static final Block BLOCK_TNG_CORE_A = new BlockTNGCore("block_tng_core_a", Material.IRON, Main.TAB_ENT);
-	public static final Block BLOCK_TNG_CORE_B = new BlockTNGCore("block_tng_core_b", Material.IRON, Main.TAB_ENT);
-	public static final Block BLOCK_TNG_CORE_C = new BlockObj("block_tng_core_c", Material.IRON, Main.TAB_ENT, 1.0f, 0, SoundType.METAL);
-	
-	public static final Block BLOCK_TNG_CORE2_A = new BlockTNGCore("block_tng_core2_a", Material.IRON, Main.TAB_DS9);
-	public static final Block BLOCK_TNG_CORE2_B = new BlockTNGCore("block_tng_core2_b", Material.IRON, Main.TAB_DS9);
-	public static final Block BLOCK_TNG_CORE2_C = new BlockObj("block_tng_core2_c", Material.IRON, Main.TAB_DS9, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORE_A = new BlockTNGCore("block_tng_core_a", Material.IRON, Main.TAB_TNG);
+	public static final Block BLOCK_TNG_CORE_B = new BlockTNGCore("block_tng_core_b", Material.IRON, Main.TAB_TNG);
+	public static final Block BLOCK_TNG_CORE_C = new BlockObj("block_tng_core_c", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	
 
 
@@ -85,37 +81,55 @@ public class InitBlocks
 	public static final Block BLOCK_TNG_ROOM_PALE_TOP_SPLIT = new BlockFacing("block_tng_room_pale_top_split",
 			Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
+	// DIAGONAL BLOCKS
+	//
+	public static final Block BLOCK_TNG_ROOM_PALE_BTM_DIAG_LEFT = new BlockDiagonalLeft("block_tng_room_pale_btm_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_ROOM_PALE_MIDDLE_DIAG_LEFT = new BlockDiagonalLeft("block_tng_room_pale_middle_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_ROOM_PALE_TOP_DIAG_LEFT = new BlockDiagonalLeft("block_tng_room_pale_top_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_ROOM_PALE_BTM_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_room_pale_btm_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);	
+	public static final Block BLOCK_TNG_ROOM_PALE_MIDDLE_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_room_pale_middle_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);	
+	public static final Block BLOCK_TNG_ROOM_PALE_TOP_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_room_pale_top_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);	
+	//
 	/*
 	 * CORRIDOR ANGLED
 	 * 
 	 */
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM = new BlockFacing(
-			"block_tng_corridor_angled_btm", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_btm", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE = new BlockFacing(
-			"block_tng_corridor_angled_middle", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_middle", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP = new BlockFacing(
-			"block_tng_corridor_angled_top", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_top", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_LEFT = new BlockFacing(
-			"block_tng_corridor_angled_btm_left", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_btm_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_RIGHT = new BlockFacing(
-			"block_tng_corridor_angled_btm_right", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_btm_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_SPLIT = new BlockFacing(
-			"block_tng_corridor_angled_btm_split", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_btm_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_LEFT = new BlockFacing(
-			"block_tng_corridor_angled_middle_left", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_middle_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_RIGHT = new BlockFacing(
-			"block_tng_corridor_angled_middle_right", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_middle_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_SPLIT = new BlockFacing(
-			"block_tng_corridor_angled_middle_split", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_middle_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_ALERT = new BlockFacing(
+			"block_tng_corridor_angled_middle_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_LEFT_ALERT = new BlockFacing(
+			"block_tng_corridor_angled_middle_left_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_RIGHT_ALERT = new BlockFacing(
+			"block_tng_corridor_angled_middle_right_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_SPLIT_ALERT = new BlockFacing(
+			"block_tng_corridor_angled_middle_split_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_LEFT = new BlockFacing(
-			"block_tng_corridor_angled_top_left", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_top_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_RIGHT = new BlockFacing(
-			"block_tng_corridor_angled_top_right", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_top_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_SPLIT = new BlockFacing(
-			"block_tng_corridor_angled_top_split", Material.IRON, Main.TAB_DSC, 1.0f, 0, SoundType.METAL);
+			"block_tng_corridor_angled_top_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	/*
 	 * CORRIDOR WITH SCREEN
@@ -168,15 +182,15 @@ public class InitBlocks
 			"block_tng_corridor_screen_top_right_brace", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	// DIAGONAL BLOCKS
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_BTM_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_btm_diag", Material.IRON, Main.TAB_TNG);
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_diag", Material.IRON, Main.TAB_TNG);
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_ALERT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_alert_diag", Material.IRON, Main.TAB_TNG);
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_TOP_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_top_diag", Material.IRON, Main.TAB_TNG);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_BTM_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_btm_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_ALERT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_alert_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_TOP_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_top_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_BTM_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_btm_split_diag", Material.IRON, Main.TAB_TNG);
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_split_diag", Material.IRON, Main.TAB_TNG);
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_SPLIT_ALERT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_split_alert_diag", Material.IRON, Main.TAB_TNG);
-	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_TOP_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_top_split_diag", Material.IRON, Main.TAB_TNG);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_BTM_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_btm_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_MIDDLE_SPLIT_ALERT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_middle_split_alert_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_SCREEN_TOP_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_screen_top_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);	
 	//
 	/*
 	 * CORRIDOR WITH BULKHEADS
@@ -222,13 +236,13 @@ public class InitBlocks
 			"block_tng_corridor_bulk_top_right_brace", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	// DIAGONAL BLOCKS
-		public static final Block BLOCK_TNG_CORRIDOR_BULK_BTM_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_btm_diag", Material.IRON, Main.TAB_TNG);
-		public static final Block BLOCK_TNG_CORRIDOR_BULK_MIDDLE_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_middle_diag", Material.IRON, Main.TAB_TNG);
-		public static final Block BLOCK_TNG_CORRIDOR_BULK_TOP_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_top_diag", Material.IRON, Main.TAB_TNG);
+		public static final Block BLOCK_TNG_CORRIDOR_BULK_BTM_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_btm_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+		public static final Block BLOCK_TNG_CORRIDOR_BULK_MIDDLE_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_middle_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+		public static final Block BLOCK_TNG_CORRIDOR_BULK_TOP_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_top_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 		//
-		public static final Block BLOCK_TNG_CORRIDOR_BULK_BTM_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_btm_split_diag", Material.IRON, Main.TAB_TNG);
-		public static final Block BLOCK_TNG_CORRIDOR_BULK_MIDDLE_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_middle_split_diag", Material.IRON, Main.TAB_TNG);
-		public static final Block BLOCK_TNG_CORRIDOR_BULK_TOP_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_top_split_diag", Material.IRON, Main.TAB_TNG);
+		public static final Block BLOCK_TNG_CORRIDOR_BULK_BTM_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_btm_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+		public static final Block BLOCK_TNG_CORRIDOR_BULK_MIDDLE_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_middle_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+		public static final Block BLOCK_TNG_CORRIDOR_BULK_TOP_SPLIT_DIAG_LEFT = new BlockDiagonalLeft("block_tng_corridor_bulk_top_split_diag", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	/*
 	 * CORRIDOR DOORWAYS

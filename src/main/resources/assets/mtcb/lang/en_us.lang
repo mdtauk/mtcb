@@ -20,6 +20,11 @@ tile.block_tng_tan.name=TNG Wall | Tan
 tile.block_tng_silver.name=TNG Wall | Silver
 tile.block_tng_pale.name=TNG Wall | Pale
 /**/
+/* TNG Warp Core Blocks */
+tile.block_tng_core_a.name=TNG Warp Core | A
+tile.block_tng_core_b.name=TNG Warp Core | B
+tile.block_tng_core_c.name=TNG Warp Core | C
+/**/
 /* TNG Room Pale Blocks */
 tile.block_tng_room_pale_top_flush.name=TNG Room | Pale | Top
 tile.block_tng_room_pale_middle_flush.name=TNG Room | Pale | Middle
@@ -36,6 +41,15 @@ tile.block_tng_room_pale_btm_right_brace.name=TNG Room | Pale | Bottom | Right
 tile.block_tng_room_pale_top_split.name=TNG Room | Pale | Top | Split
 tile.block_tng_room_pale_middle_split.name=TNG Room | Pale | Middle | Split
 tile.block_tng_room_pale_btm_split.name=TNG Room | Pale | Bottom | Split
+//
+tile.block_tng_room_pale_btm_diag.name=TNG Room | Pale | Bottom | Diagonal
+tile.block_tng_room_pale_middle_diag.name=TNG Room | Pale | Middle | Diagonal
+tile.block_tng_room_pale_top_diag.name=TNG Room | Pale | Top | Diagonal
+/-/
+tile.block_tng_room_pale_btm_split_diag.name=TNG Room | Pale | Bottom | Split | Diagonal
+tile.block_tng_room_pale_middle_split_diag.name=TNG Room | Pale | Middle | Split | Diagonal
+tile.block_tng_room_pale_top_split_diag.name=TNG Room | Pale | Top | Split | Diagonal
+//
 /**/
 /* TNG Corridor with Screen Blocks */
 tile.block_tng_corridor_screen_top_left_brace.name=TNG Corridor | Screen | Top | Left

@@ -1,6 +1,6 @@
 {
     "variants": 
     {
-        "normal": { "model": "mtcb:block_tng_room_pale_btm_flush" }
+        "normal": { "model": "mtcb:tng/room_pale/block_tng_room_pale_btm_flush" }
     }
 }

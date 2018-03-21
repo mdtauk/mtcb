@@ -1,0 +1,10 @@
+{
+    "parent": "mtcb:block/tng/room_pale/block_tng_room_pale_btm_diag",
+    "display": {
+        "gui": {
+            "rotation": [ 30, 180, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.65, 0.65, 0.65 ]
+            }
+    }
+}

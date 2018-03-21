@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "mtcb:blocks/test_m"
+        "layer0": "mtcb:items/item_tng_core_b"
     }
 }

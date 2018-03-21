@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "mtcb:block_tng_corridor_screen_top_split" },
-        "facing=south": { "model": "mtcb:block_tng_corridor_screen_top_split", "y": 180 },
-        "facing=west":  { "model": "mtcb:block_tng_corridor_screen_top_split", "y": 270 },
-        "facing=east":  { "model": "mtcb:block_tng_corridor_screen_top_split", "y": 90 }
+        "facing=north": { "model": "mtcb:tng/corridor_screen/block_tng_corridor_screen_top_split" },
+        "facing=south": { "model": "mtcb:tng/corridor_screen/block_tng_corridor_screen_top_split", "y": 180 },
+        "facing=west":  { "model": "mtcb:tng/corridor_screen/block_tng_corridor_screen_top_split", "y": 270 },
+        "facing=east":  { "model": "mtcb:tng/corridor_screen/block_tng_corridor_screen_top_split", "y": 90 }
     }
 }

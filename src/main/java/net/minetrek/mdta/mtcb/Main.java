@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minetrek.mdta.mtcb.init.InitItems;
 import net.minetrek.mdta.mtcb.objects.tabs.CTab;
 import net.minetrek.mdta.mtcb.proxies.CommonProxy;
 import net.minetrek.mdta.mtcb.util.References;
@@ -52,7 +53,7 @@ public class Main
 	public static final CreativeTabs TAB_DSC = new CTab("tab_dsc", Items.IRON_AXE, "dscbg.png", false);
 	public static final CreativeTabs TAB_TOS = new CTab("tab_tos", Items.DIAMOND_HOE, "tosbg.png", false);
 	public static final CreativeTabs TAB_MOVIE = new CTab("tab_movie", Items.DIAMOND_SHOVEL, "moviesbg.png", false);
-	public static final CreativeTabs TAB_TNG = new CTab("tab_tng", Items.DIAMOND, "tngbg.png", true);
+	public static final CreativeTabs TAB_TNG = new CTab("tab_tng", InitItems.ITEM_TNG_ICON, "tngbg.png", true);
 	public static final CreativeTabs TAB_DS9 = new CTab("tab_ds9", Items.DIAMOND_AXE, "ds9bg.png", false);
 	public static final CreativeTabs TAB_VOY = new CTab("tab_voy", Items.DIAMOND_PICKAXE, "voybg.png", false);
 	public static final CreativeTabs TAB_JJ = new CTab("tab_jj", Items.BUCKET, "jjbg.png", false);

@@ -1,3 +1,10 @@
 {
-    "parent": "mtcb:block/tng/corridor_screen/block_tng_corridor_screen_btm_split_diag"
+    "parent": "mtcb:block/tng/corridor_screen/block_tng_corridor_screen_btm_split_diag",
+    "display": {
+        "gui": {
+            "rotation": [ 30, 180, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.65, 0.65, 0.65 ]
+            }
+    }
 }

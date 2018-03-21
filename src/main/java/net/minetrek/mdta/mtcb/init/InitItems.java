@@ -11,7 +11,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemDoor;
 import net.minetrek.mdta.mtcb.Main;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockTNGCore;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
+import net.minetrek.mdta.mtcb.objects.items.ItemBase;
 import net.minetrek.mdta.mtcb.objects.items.ItemDoorBase;
 import net.minetrek.mdta.mtcb.util.handlers.HandleSounds;
 
@@ -23,4 +25,8 @@ import net.minetrek.mdta.mtcb.util.handlers.HandleSounds;
 public class InitItems
 {
 	public static final List<Item> ALL_ITEMS = new ArrayList<Item>();
+	
+	
+	
+	public static final Item ITEM_TNG_ICON = new ItemBase("item_tng_icon", null);
 }
