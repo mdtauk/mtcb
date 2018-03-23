@@ -26,7 +26,7 @@ import net.minetrek.mdta.mtcb.util.interfaces.IHasModel;
 
 
 
-public class BlockTrekCarpet extends BlockBase implements IHasModel
+public class BlockTrekCarpet extends BlockFacing implements IHasModel
 {
 	// 0.015625D = 1 / 64
 	protected static final AxisAlignedBB TREKCARPET_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.015625D, 1.0D);

@@ -1,0 +1,20 @@
+{    
+    "elements": [    
+        {
+            "__comment": "Plane_E_W",
+            "from": [ 8, 0, 0 ],
+            "to": [ 8, 16, 16 ],
+            "faces": {
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+            }
+        }
+    ],
+    "display": {
+        "gui": {
+            "rotation": [ 0, 270, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.95, 0.95, 0.95 ]
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "textures": {
+        "particle": "mtcb:blocks/carpet/carpet_deep_red",
+        "wool": "mtcb:blocks/carpet/carpet_deep_red"
+    },
+    "variants": {
+        "facing=north": { "model": "mtcb:carpet/trek_carpet_deep_red", "y": 0 },
+        "facing=south": { "model": "mtcb:carpet/trek_carpet_deep_red", "y": 0},
+        "facing=west":  { "model": "mtcb:carpet/trek_carpet_deep_red", "y": 0},
+        "facing=east":  { "model": "mtcb:carpet/trek_carpet_deep_red", "y": 0}
+    }
+}

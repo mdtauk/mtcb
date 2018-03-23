@@ -1,5 +1,8 @@
 {
     "variants": {
-        "normal": { "model": "mtcb:carpet/trek_carpet_dark_grey" }
+        "facing=north": { "model": "mtcb:carpet/trek_carpet_dark_grey" },
+        "facing=south": { "model": "mtcb:carpet/trek_carpet_dark_grey"},
+        "facing=west":  { "model": "mtcb:carpet/trek_carpet_dark_grey"},
+        "facing=east":  { "model": "mtcb:carpet/trek_carpet_dark_grey"}
     }
 }

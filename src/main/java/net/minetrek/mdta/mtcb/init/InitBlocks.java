@@ -45,6 +45,14 @@ public class InitBlocks
 	public static final Block BLOCK_CARPET_DARK_GREY = new BlockTrekCarpet("block_trek_carpet_dark_grey", Main.TAB_MISC);
 	//
 	/*
+	 * Carpet Corner Blocks
+	 */
+	public static final Block BLOCK_CARPET_CORNER_TEAL = new BlockTrekCarpet("block_trek_carpet_corner_teal", Main.TAB_MISC);
+	public static final Block BLOCK_CARPET_CORNER_TAN = new BlockTrekCarpet("block_trek_carpet_corner_tan", Main.TAB_MISC);
+	public static final Block BLOCK_CARPET_CORNER_DEEP_RED = new BlockTrekCarpet("block_trek_carpet_corner_deep_red", Main.TAB_MISC);
+	public static final Block BLOCK_CARPET_CORNER_DARK_GREY = new BlockTrekCarpet("block_trek_carpet_corner_dark_grey", Main.TAB_MISC);
+	//
+	/*
 	 * Carpet Full Blocks
 	 */
 	public static final Block BLOCK_FABRIC_TEAL = new BlockTrekFabric("block_fabric_teal", Main.TAB_MISC);
