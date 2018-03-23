@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "mtcb:items/icon_tng"
+        "layer0": "mtcb:items/icon_tng_movies"
     }
 }

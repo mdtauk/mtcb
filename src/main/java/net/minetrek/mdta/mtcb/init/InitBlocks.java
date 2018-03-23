@@ -14,7 +14,9 @@ import net.minetrek.mdta.mtcb.objects.blocks.BlockDiagonalLeft;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockFacing;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockObj;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTNGCore;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekCarpet;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekFabric;
 
 
 
@@ -33,6 +35,23 @@ public class InitBlocks
 	public static final Block BLOCK_TNG_CORE_A = new BlockTNGCore("block_tng_core_a", Material.IRON, Main.TAB_TNG);
 	public static final Block BLOCK_TNG_CORE_B = new BlockTNGCore("block_tng_core_b", Material.IRON, Main.TAB_TNG);
 	public static final Block BLOCK_TNG_CORE_C = new BlockObj("block_tng_core_c", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	/*
+	 * Carpet Flat Blocks
+	 */
+	public static final Block BLOCK_CARPET_TEAL = new BlockTrekCarpet("block_trek_carpet_teal", Main.TAB_MISC);
+	public static final Block BLOCK_CARPET_TAN = new BlockTrekCarpet("block_trek_carpet_tan", Main.TAB_MISC);
+	public static final Block BLOCK_CARPET_DEEP_RED = new BlockTrekCarpet("block_trek_carpet_deep_red", Main.TAB_MISC);
+	public static final Block BLOCK_CARPET_DARK_GREY = new BlockTrekCarpet("block_trek_carpet_dark_grey", Main.TAB_MISC);
+	//
+	/*
+	 * Carpet Full Blocks
+	 */
+	public static final Block BLOCK_FABRIC_TEAL = new BlockTrekFabric("block_fabric_teal", Main.TAB_MISC);
+	public static final Block BLOCK_FABRIC_TAN = new BlockTrekFabric("block_fabric_tan", Main.TAB_MISC);
+	public static final Block BLOCK_FABRIC_DEEP_RED = new BlockTrekFabric("block_fabric_deep_red", Main.TAB_MISC);
+	public static final Block BLOCK_FABRIC_DARK_GREY = new BlockTrekFabric("block_fabric_dark_grey", Main.TAB_MISC);
+	//
 	
 
 

@@ -2,16 +2,16 @@
 
 
 // C TABS
-itemGroup.tab_ent=Enterprise Bits
-itemGroup.tab_dsc=Discovery Bits
-itemGroup.tab_tos=TOS Bits
-itemGroup.tab_movie=Movie Era Bits
-itemGroup.tab_tng=TNG Bits
-itemGroup.tab_ds9=DS9 Bits
-itemGroup.tab_voy=Voyager Bits
-itemGroup.tab_jj=JJ Trek Bits
-itemGroup.tab_tngmovie=TNG Movie Bits
-itemGroup.tab_misc=Misc Trek Bits
+itemGroup.tab_ent=Enterprise
+itemGroup.tab_dsc=Discovery
+itemGroup.tab_tos=TOS
+itemGroup.tab_movie=Movie Era
+itemGroup.tab_tng=TNG
+itemGroup.tab_ds9=DS9
+itemGroup.tab_voy=Voyager
+itemGroup.tab_jj=JJ Trek
+itemGroup.tab_tngmovie=TNG Movies
+itemGroup.tab_misc=Misc Trek
 
 
 // TNG BLOCKS

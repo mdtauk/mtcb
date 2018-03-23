@@ -27,6 +27,17 @@ public class InitItems
 	public static final List<Item> ALL_ITEMS = new ArrayList<Item>();
 	
 	
-	
+	/*
+	 * CREATIVE TAB ICONS
+	 */
+	public static final Item ITEM_ENT_ICON = new ItemBase("item_ent_icon", null);
+	public static final Item ITEM_DSC_ICON = new ItemBase("item_dsc_icon", null);
+	public static final Item ITEM_TOS_ICON = new ItemBase("item_tos_icon", null);
+	public static final Item ITEM_TOS_MOVIES_ICON = new ItemBase("item_tos_movies_icon", null);
 	public static final Item ITEM_TNG_ICON = new ItemBase("item_tng_icon", null);
+	public static final Item ITEM_DS9_ICON = new ItemBase("item_ds9_icon", null);
+	public static final Item ITEM_VOY_ICON = new ItemBase("item_voy_icon", null);
+	public static final Item ITEM_TNG_MOVIES_ICON = new ItemBase("item_tng_movies_icon", null);
+	public static final Item ITEM_JJ_ICON = new ItemBase("item_jj_icon", null);
+	public static final Item ITEM_MISC_ICON = new ItemBase("item_misc_icon", null);
 }

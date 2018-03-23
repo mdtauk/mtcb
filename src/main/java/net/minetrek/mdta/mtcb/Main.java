@@ -45,20 +45,18 @@ public class Main
 	public static Main instance;
 
 
-	/**
-	 * TODO: Shorten the labels for the tabs to better fit the space
-	 */
+	
 	// Create instances of our Creative Tabs
-	public static final CreativeTabs TAB_ENT = new CTab("tab_ent", Items.IRON_HOE, "entbg.png", false);
-	public static final CreativeTabs TAB_DSC = new CTab("tab_dsc", Items.IRON_AXE, "dscbg.png", false);
-	public static final CreativeTabs TAB_TOS = new CTab("tab_tos", Items.DIAMOND_HOE, "tosbg.png", false);
-	public static final CreativeTabs TAB_MOVIE = new CTab("tab_movie", Items.DIAMOND_SHOVEL, "moviesbg.png", false);
+	public static final CreativeTabs TAB_ENT = new CTab("tab_ent", InitItems.ITEM_ENT_ICON, "entbg.png", false);
+	public static final CreativeTabs TAB_DSC = new CTab("tab_dsc", InitItems.ITEM_DSC_ICON, "dscbg.png", false);
+	public static final CreativeTabs TAB_TOS = new CTab("tab_tos", InitItems.ITEM_TOS_ICON, "tosbg.png", false);
+	public static final CreativeTabs TAB_MOVIES = new CTab("tab_movie", InitItems.ITEM_TOS_MOVIES_ICON, "moviesbg.png", false);
 	public static final CreativeTabs TAB_TNG = new CTab("tab_tng", InitItems.ITEM_TNG_ICON, "tngbg.png", true);
-	public static final CreativeTabs TAB_DS9 = new CTab("tab_ds9", Items.DIAMOND_AXE, "ds9bg.png", false);
-	public static final CreativeTabs TAB_VOY = new CTab("tab_voy", Items.DIAMOND_PICKAXE, "voybg.png", false);
-	public static final CreativeTabs TAB_JJ = new CTab("tab_jj", Items.BUCKET, "jjbg.png", false);
-	public static final CreativeTabs TAB_TNGMOVIE = new CTab("tab_tngmovie", Items.APPLE, "tngmoviebg.png", false);
-	public static final CreativeTabs TAB_MISC = new CTab("tab_misc", Items.MELON, "miscbg.png", false);
+	public static final CreativeTabs TAB_DS9 = new CTab("tab_ds9", InitItems.ITEM_DS9_ICON, "ds9bg.png", false);
+	public static final CreativeTabs TAB_VOY = new CTab("tab_voy", InitItems.ITEM_VOY_ICON, "voybg.png", false);
+	public static final CreativeTabs TAB_JJ = new CTab("tab_jj", InitItems.ITEM_JJ_ICON, "jjbg.png", false);
+	public static final CreativeTabs TAB_TNG_MOVIES = new CTab("tab_tngmovie", InitItems.ITEM_TNG_MOVIES_ICON, "tngmoviebg.png", false);
+	public static final CreativeTabs TAB_MISC = new CTab("tab_misc", InitItems.ITEM_MISC_ICON, "miscbg.png", false);
 	/**/
 
 

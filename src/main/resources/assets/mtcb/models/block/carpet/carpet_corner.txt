@@ -9,7 +9,4 @@ newmtl Material
 
 Ka 1.000000 1.000000 1.000000
 
-Kd 1.000000 1.000000 1.000000 
-
-
-map_Kd E:\Dev\minecrafting\mdta-minetrek\-editables\tex\test_b.png
+Kd 1.000000 1.000000 1.000000
