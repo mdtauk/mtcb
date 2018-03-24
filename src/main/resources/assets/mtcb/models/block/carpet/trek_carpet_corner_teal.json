@@ -1,0 +1,7 @@
+{
+    "parent": "mtcb:block/carpet/model_trek_carpet",
+    "textures": {
+        "particle": "mtcb:blocks/carpet/carpet_teal",
+        "wool": "mtcb:blocks/carpet/carpet_teal"
+    }
+}
