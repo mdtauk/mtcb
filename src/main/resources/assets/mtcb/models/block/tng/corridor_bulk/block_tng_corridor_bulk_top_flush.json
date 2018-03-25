@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "particle": "mtcb:blocks/tng/corridors/tng_corridor_bulk_top_flush",
+        "particle": "mtcb:blocks/tng/corridors/bulkheads/tng_corridor_bulk_top_flush",
         "down": "mtcb:blocks/tng/tng_wall_silver",
         "up": "mtcb:blocks/tng/tng_wall_tan",
-        "north": "mtcb:blocks/tng/corridors/tng_corridor_bulk_top_flush",
-        "east": "mtcb:blocks/tng/corridors/tng_corridor_bulk_top_flush",
+        "north": "mtcb:blocks/tng/corridors/bulkheads/tng_corridor_bulk_top_flush",
+        "east": "mtcb:blocks/tng/corridors/bulkheads/tng_corridor_bulk_top_flush",
         "south": "mtcb:blocks/tng/room_pale/tng_room_pale_top_flush",
-        "west": "mtcb:blocks/tng/corridors/tng_corridor_bulk_top_flush"
+        "west": "mtcb:blocks/tng/corridors/bulkheads/tng_corridor_bulk_top_flush"
     }
 }

@@ -12,6 +12,28 @@ itemGroup.tab_voy=Voyager
 itemGroup.tab_jj=JJ Trek
 itemGroup.tab_tngmovie=TNG Movies
 itemGroup.tab_misc=Misc Trek
+//
+
+
+// CARPET AND FABRIC BLOCKS
+tile.block_trek_carpet_teal.name=Trek Carpet | Teal
+tile.block_trek_carpet_tan.name=Trek Carpet | Tan
+tile.block_trek_carpet_deep_red.name=Trek Carpet | Deep Red
+tile.block_trek_carpet_dark_grey.name=Trek Carpet | Dark Grey
+
+/* Carpet Corner */
+tile.block_trek_carpet_corner_teal.name=Trek Carpet | Corner | Teal
+tile.block_trek_carpet_corner_tan.name=Trek Carpet | Corner | Tan
+tile.block_trek_carpet_corner_deep_red.name=Trek Carpet | Corner | Deep Red
+tile.block_trek_carpet_corner_dark_grey.name=Trek Carpet | Corner | Dark Grey
+
+/* Fabric */
+tile.block_fabric_teal.name=Trek Fabric | Teal
+tile.block_fabric_tan.name=Trek Fabric | Tan
+tile.block_fabric_deep_red.name=Trek Fabric | Deep Red
+tile.block_fabric_dark_grey.name=Trek Fabric | Dark Grey
+//
+
 
 
 // TNG BLOCKS
