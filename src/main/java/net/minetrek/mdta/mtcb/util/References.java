@@ -8,7 +8,7 @@ public class References
 {
 	public static final String MOD_ID = "mtcb";
 	public static final String MOD_NAME = "MineTrek Custom Blocks";
-	public static final String MOD_VERSION = "1.02";
+	public static final String MOD_VERSION = "1.02.01";
 	public static final String MOD_MC_VERSION = "1.12";
 	
 	public static final String MOD_CLIENT_PROXY = "net.minetrek.mdta.mtcb.proxies.ClientProxy";

@@ -75,7 +75,7 @@ public class InitBlocks
 			SoundType.METAL);
 	public static final Block BLOCK_TNG_PALE = new BlockBase("block_tng_pale", Material.IRON, Main.TAB_TNG, 1.0f, 8,
 			SoundType.METAL);
-	//
+	//	
 	/*
 	 * PALE ROOM
 	 * 

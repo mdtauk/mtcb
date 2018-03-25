@@ -84,9 +84,6 @@ public class Main
 	{
 		logger = event.getModLog();
 		proxy.preInit(event);
-		
-		Main.logger.debug("AWOOGA - Main.preInit: OBJLoader will now add the domain " + References.MOD_ID + ":");
-		OBJLoader.INSTANCE.addDomain(References.MOD_ID.toLowerCase());
 	}
 
 
