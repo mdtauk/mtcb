@@ -121,41 +121,59 @@ public class InitBlocks
 	 * CORRIDOR ANGLED
 	 * 
 	 */
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_LEFT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_RIGHT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_SPLIT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_ALERT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_LEFT_ALERT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_left_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_RIGHT_ALERT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_right_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_CARGO_BTM_SPLIT_ALERT = new BlockObj(
+			"block_tng_corridor_angled_cargo_btm_split_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM = new BlockObj(
 			"block_tng_corridor_angled_btm", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE = new BlockObj(
 			"block_tng_corridor_angled_middle", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP = new BlockObj(
 			"block_tng_corridor_angled_top", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_LEFT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_LEFT = new BlockObj(
 			"block_tng_corridor_angled_btm_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_RIGHT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_RIGHT = new BlockObj(
 			"block_tng_corridor_angled_btm_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_SPLIT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_BTM_SPLIT = new BlockObj(
 			"block_tng_corridor_angled_btm_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_LEFT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_LEFT = new BlockObj(
 			"block_tng_corridor_angled_middle_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_RIGHT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_RIGHT = new BlockObj(
 			"block_tng_corridor_angled_middle_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_SPLIT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_SPLIT = new BlockObj(
 			"block_tng_corridor_angled_middle_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_ALERT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_ALERT = new BlockObj(
 			"block_tng_corridor_angled_middle_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_LEFT_ALERT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_LEFT_ALERT = new BlockObj(
 			"block_tng_corridor_angled_middle_left_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_RIGHT_ALERT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_RIGHT_ALERT = new BlockObj(
 			"block_tng_corridor_angled_middle_right_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_SPLIT_ALERT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_MIDDLE_SPLIT_ALERT = new BlockObj(
 			"block_tng_corridor_angled_middle_split_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_LEFT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_LEFT = new BlockObj(
 			"block_tng_corridor_angled_top_left", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_RIGHT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_RIGHT = new BlockObj(
 			"block_tng_corridor_angled_top_right", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
-	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_SPLIT = new BlockFacing(
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_TOP_SPLIT = new BlockObj(
 			"block_tng_corridor_angled_top_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	/*

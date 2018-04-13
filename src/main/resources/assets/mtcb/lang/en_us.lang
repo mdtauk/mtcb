@@ -159,6 +159,16 @@ tile.block_tng_corridor_angled_top_left.name=TNG Corridor | Angled | Top | Left
 tile.block_tng_corridor_angled_top_right.name=TNG Corridor | Angled | Top | Right
 tile.block_tng_corridor_angled_top_split.name=TNG Corridor | Angled | Top | Split
 //
+tile.block_tng_corridor_angled_cargo_btm.name=TNG Corridor | Angled | Cargo | Bottom
+tile.block_tng_corridor_angled_cargo_btm_left.name=TNG Corridor | Angled | Cargo | Bottom | Left
+tile.block_tng_corridor_angled_cargo_btm_right.name=TNG Corridor | Angled | Cargo | Bottom | Right
+tile.block_tng_corridor_angled_cargo_btm_split.name=TNG Corridor | Angled | Cargo | Bottom | Split
+//
+tile.block_tng_corridor_angled_cargo_btm_alert.name=TNG Corridor | Angled | Cargo | Bottom | Red Alert
+tile.block_tng_corridor_angled_cargo_btm_left_alert.name=TNG Corridor | Angled | Cargo | Bottom | Left | Red Alert
+tile.block_tng_corridor_angled_cargo_btm_right_alert.name=TNG Corridor | Angled | Cargo | Bottom | Right | Red Alert
+tile.block_tng_corridor_angled_cargo_btm_split_alert.name=TNG Corridor | Angled | Cargo | Bottom | Split | Red Alert
+//
 /**/
 /*  
  *  TNG Doorway Tan Blocks

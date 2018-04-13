@@ -1,0 +1,20 @@
+# Blender v2.76 (sub 0) OBJ File: 'tng_angled_corridor_alt.blend'
+# www.blender.org
+mtllib tng_angled_corridor_alt.mtl
+
+o corridor_middle_flush
+v 0.350000 0.000000 1.000000
+v 0.350000 0.000000 0.000000
+v 0.550000 1.000000 1.000000
+v 0.550000 1.000000 0.000000
+
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 1.000000 1.000000
+vt -0.000000 1.000000
+
+vn 0.980600 -0.196100 0.000000
+
+usemtl tex_middle
+f 1/1/1 2/2/1 4/3/1
+f 3/4/1 1/1/1 4/3/1

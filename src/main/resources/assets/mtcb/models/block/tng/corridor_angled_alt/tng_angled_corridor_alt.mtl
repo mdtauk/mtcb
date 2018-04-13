@@ -1,0 +1,25 @@
+newmtl tex_brace
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/tng_corridor_brace
+
+newmtl tex_btm
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/angled/tng_corridor_angled_btm_flush
+
+newmtl tex_middle
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/angled/tng_corridor_angled_middle_flush
+
+newmtl tex_top
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/angled/tng_corridor_angled_top_flush
+
+
+newmtl tex_cargo_btm
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/angled/tng_corridor_angled_cargo_btm_flush

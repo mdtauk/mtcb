@@ -2,20 +2,45 @@
     "forge_marker": 1,
     "defaults": {
         "custom": { "flip-v": true },
-        "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_btm.obj"        
-      },
+        "model": "mtcb:tng/corridor_angled_alt/model_tng_corridor_angled_alt_btm_flush.obj",
+        "textures": {
+            "#tex_cargo_btm": "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_btm_flush",
+            "tex_back": "mtcb:blocks/tng/room_pale/tng_room_pale_btm_flush"
+        }
+    },
     "variants": {
         "normal": [{}],
-            "inventory": [
-                { "transform": "forge:default-block" }
-             ],
+        "inventory": 
+        [{ 
+            "transform": 
+            {
+                "firstperson_righthand" :
+                 {
+                    "rotation" : [{"x": 0}, {"y": 225}, {"z": -5}],
+                    "translation" : [-0.1, 0.2, 0.0],
+                    "scale" :   [0.5, 0.5, 0.5]
+                 },
+                 "firstperson_lefthand" :
+                 {
+                    "rotation" : [{"x": 0}, {"y": 65}, {"z": -5}],
+                    "translation" : [-0.1, 0.2, 0.0],
+                    "scale" :   [0.5, 0.5, 0.5]
+                 },
+                "gui": 
+                {
+                    "rotation": [{"x":30}, {"y": 225}, {"z": 0}],
+                    "translation": [ 0, 0, 0 ],
+                    "scale":[ 0.65, 0.65, 0.65 ]
+                }
+            } 
+        }],
         "facing": {
             "north": {
                 "y": 270,
-                "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_btm.obj",
+                "model": "mtcb:tng/corridor_angled_alt/model_tng_corridor_angled_alt_btm_flush.obj",
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_flush_btm",
+                        "model": "mtcb:tng/corridor_angled_alt/tng_corridor_angled_alt_back",
                         "y": 180 ,
                         "flip-v": true 
                         }
@@ -23,10 +48,10 @@
             },
             "south": {
                 "y": 90,
-                "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_btm.obj",                
+                "model": "mtcb:tng/corridor_angled_alt/model_tng_corridor_angled_alt_btm_flush.obj",                
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_flush_btm",
+                        "model": "mtcb:tng/corridor_angled_alt/tng_corridor_angled_alt_back",
                         "y": 180 ,
                         "flip-v": true 
                         }
@@ -34,10 +59,10 @@
             },
             "west": {
                 "y": 180,
-                "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_btm.obj",                
+                "model": "mtcb:tng/corridor_angled_alt/model_tng_corridor_angled_alt_btm_flush.obj",                
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_flush_btm",
+                        "model": "mtcb:tng/corridor_angled_alt/tng_corridor_angled_alt_back",
                         "y": 180 ,
                         "flip-v": true 
                         }
@@ -45,10 +70,10 @@
             },
             "east": {
                 "y": 0,
-                "model": "mtcb:tng/corridor_angled/model_tng_corridor_angled_btm.obj",                
+                "model": "mtcb:tng/corridor_angled_alt/model_tng_corridor_angled_alt_btm_flush.obj",                
                 "submodel": {
                     "centre":{
-                        "model": "mtcb:tng/corridor_angled/tng_corridor_angled_flush_btm",
+                        "model": "mtcb:tng/corridor_angled_alt/tng_corridor_angled_alt_back",
                         "y": 180 ,
                         "flip-v": true 
                         }
