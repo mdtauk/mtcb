@@ -16,6 +16,7 @@ import net.minetrek.mdta.mtcb.objects.blocks.BlockObj;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTNGCore;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekCarpet;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor;
+import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekDoor2;
 import net.minetrek.mdta.mtcb.objects.blocks.BlockTrekFabric;
 
 
@@ -66,7 +67,7 @@ public class InitBlocks
 	// T N G B L O C K S
 	//
 	public static final Block DOOR_TNG_ORANGE = new BlockTrekDoor("door_tng_orange", Material.WOOD, Main.TAB_TNG);
-	public static final Block DOOR_TNG_GREY = new BlockTrekDoor("door_tng_grey", Material.WOOD, Main.TAB_TNG);
+	public static final Block DOOR_TNG_GREY = new BlockTrekDoor2("door_tng_grey", Material.WOOD, Main.TAB_TNG, null);
 	/*
 	 * FILLER WALL BLOCKS
 	 */

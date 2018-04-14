@@ -3,6 +3,7 @@ Ka 1.000000 1.000000 1.000000
 Kd 1.000000 1.000000 1.000000
 map_Kd mtcb:blocks/tng/corridors/tng_corridor_brace
 
+
 newmtl tex_btm
 Ka 1.000000 1.000000 1.000000
 Kd 1.000000 1.000000 1.000000
@@ -23,3 +24,25 @@ newmtl tex_cargo_btm
 Ka 1.000000 1.000000 1.000000
 Kd 1.000000 1.000000 1.000000
 map_Kd mtcb:blocks/tng/corridors/angled/tng_corridor_angled_cargo_btm_flush
+
+
+newmtl tex_brace_end_btm
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/tng_corridor_brace_end_btm
+
+newmtl tex_brace_end_middle
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/tng_corridor_brace_end_mid
+
+newmtl tex_brace_end_top
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/tng_corridor_brace_end_top
+
+
+newmtl tex_cargo_brace_end
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+map_Kd mtcb:blocks/tng/corridors/tng_corridor_brace_end_cargo

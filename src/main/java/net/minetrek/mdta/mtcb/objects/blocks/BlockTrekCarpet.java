@@ -40,6 +40,8 @@ public class BlockTrekCarpet extends BlockFacing implements IHasModel
 		super(name, Material.CARPET, tab);
 		
         this.setTickRandomly(true);
+        
+        this.useNeighborBrightness = true;
     }
 	
 	
