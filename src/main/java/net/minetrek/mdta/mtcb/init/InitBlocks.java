@@ -178,6 +178,25 @@ public class InitBlocks
 			"block_tng_corridor_angled_top_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
 	//
 	/*
+	 * CORRIDOR ANGLED DIAGONAL
+	 * 
+	 */
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_BTM = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_btm", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_MIDDLE = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_middle", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_MIDDLE_ALERT = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_middle_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_TOP = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_top", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_BTM_SPLIT = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_btm_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_MIDDLE_SPLIT = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_middle_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_MIDDLE_SPLIT_ALERT = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_middle_split_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_A_TOP_SPLIT = new BlockDiagonalLeft("block_tng_corridor_angled_diag_a_top_split", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_B_BTM = new BlockDiagonalLeft("block_tng_corridor_angled_diag_b_btm", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_B_MIDDLE = new BlockDiagonalLeft("block_tng_corridor_angled_diag_b_middle", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_B_MIDDLE_ALERT = new BlockDiagonalLeft("block_tng_corridor_angled_diag_b_middle_alert", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	public static final Block BLOCK_TNG_CORRIDOR_ANGLED_DIAG_B_TOP = new BlockDiagonalLeft("block_tng_corridor_angled_diag_b_top", Material.IRON, Main.TAB_TNG, 1.0f, 0, SoundType.METAL);
+	//
+	/*
 	 * CORRIDOR WITH SCREEN
 	 * 
 	 * Vertical placement - Top, Middle, Bottom | Brace placement - Left, Split,

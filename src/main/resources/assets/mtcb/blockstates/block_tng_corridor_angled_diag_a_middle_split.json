@@ -1,0 +1,42 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "custom": { "flip-v": true },
+        "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_a_middle_split.obj",
+        "textures": {
+            "#tex_middle": "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_middle_split_diag"
+        }
+    },
+    "variants": {
+        "normal": [{}],
+        "inventory":[{
+            "transform": 
+            {
+                "firstperson_righthand" :
+                 {
+                    "rotation" : [{"x": -10}, {"y": 265}, {"z": -5}],
+                    "translation" : [-0.1, 0.2, 0.0],
+                    "scale" :   [0.5, 0.5, 0.5]
+                 },
+                 "firstperson_lefthand" :
+                 {
+                    "rotation" : [{"x": -10}, {"y": 45}, {"z": -5}],
+                    "translation" : [-0.1, 0.2, 0.0],
+                    "scale" :   [0.5, 0.5, 0.5]
+                 },
+                "gui": 
+                {
+                    "rotation": [{"x":30}, {"y": 300}, {"z": 0}],
+                    "translation": [ 0, -0.11, 0 ],
+                    "scale":[ 0.8, 0.8, 0.8 ]
+                }
+            }    
+        }],
+        "facing": {
+            "north": { "y": 270, "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_a_middle_split.obj" },
+            "south": { "y": 90, "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_a_middle_split.obj" },
+            "west": { "y": 180, "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_a_middle_split.obj" },
+            "east": { "y": 0, "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_a_middle_split.obj" }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 # www.blender.org
 mtllib tng_angled_corridor_alt.mtl
 
-o corridor_middle_flush
+o corridor_middle_flush_Cube.013
 v 0.350000 0.000000 1.000000
 v 0.350000 0.000000 0.000000
 v 0.550000 1.000000 1.000000

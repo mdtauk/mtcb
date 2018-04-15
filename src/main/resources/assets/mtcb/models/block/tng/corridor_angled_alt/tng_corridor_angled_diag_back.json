@@ -1,0 +1,18 @@
+{
+    "__comment": "Designed by Mdtauk with Cubik Studio - https://cubik.studio",
+    "textures": {
+        "tex_back": "#tex_back",
+        "tex_up": "#tex_up"
+    },
+    "elements": [    
+        {
+            "__comment": "face_back",
+            "from": [ 16, 0, 0 ],
+            "to": [ 16, 16, 22.63 ],
+            "rotation": { "origin": [ 16, 0, 0 ], "axis": "y", "angle": -45 },
+            "faces": {
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_back" }
+            }
+        }
+    ]
+}

@@ -444,7 +444,7 @@ public class BlockDiagonalLeft extends BlockFacing implements IHasModel
 			}
 			case NORTH:
 			{
-				return AABB_LEFT_NORTH_C.offset(pos);
+				return AABB_FULL_CUBE.offset(pos);
 			}
 			case SOUTH:
 			{
