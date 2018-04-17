@@ -4,7 +4,7 @@
         "custom": { "flip-v": true },
         "model": "mtcb:tng/corridor_angled_alt/model_tng_corridor_angled_alt_btm_flush.obj",
         "textures": {
-            "#tex_cargo_btm": "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_btm_flush",
+            "#tex_btm": "mtcb:blocks/tng/corridors/angled/tng_corridor_angled_btm_flush",
             "tex_back": "mtcb:blocks/tng/room_pale/tng_room_pale_btm_flush"
         }
     },

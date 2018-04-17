@@ -36,7 +36,7 @@
         }],
         "facing": {
             "north": {
-                "y": 270,
+                "y": 90,
                 "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_b_middle.obj",
                 "submodel": {
                     "centre":{
@@ -47,7 +47,7 @@
                 }                                               
             },
             "south": {
-                "y": 90,
+                "y": 270,
                 "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_b_middle.obj",                
                 "submodel": {
                     "centre":{
@@ -58,7 +58,7 @@
                 }
             },
             "west": {
-                "y": 180,
+                "y": 0,
                 "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_b_middle.obj",                
                 "submodel": {
                     "centre":{
@@ -69,7 +69,7 @@
                 }               
             },
             "east": {
-                "y": 0,
+                "y": 180,
                 "model": "mtcb:tng/corridor_angled_alt/tng_angled_corridor_diag_b_middle.obj",                
                 "submodel": {
                     "centre":{

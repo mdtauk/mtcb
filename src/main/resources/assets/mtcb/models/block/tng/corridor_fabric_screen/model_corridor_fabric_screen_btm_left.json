@@ -1,0 +1,51 @@
+{
+    "parent": "mtcb:block/tng/corridor_fabric_screen/model_gui",
+	"__comment": "Designed by mdtaUK with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "#tex_main",
+		"tex_main": "mtcb:blocks/tng/corridors/fabric_screen/tng_corridor_fabric_screen_btm_left",
+        "tex_back": "mtcb:blocks/tng/room_pale/tng_room_pale_btm_right",
+		"tex_tan": "mtcb:blocks/tng/tng_wall_tan",
+		"tex_brace": "mtcb:blocks/tng/corridors/tng_corridor_brace",
+		"tex_detail": "mtcb:blocks/tng/corridors/fabric_screen/tng_corridor_fabric_screen_left_detail"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Cube",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_tan", "cullface": "down" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_tan", "cullface": "up" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_tan", "cullface": "north" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_tan", "cullface": "south" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#tex_back", "cullface": "east" }
+			}
+		},
+		{
+			"__comment": "Facing Left",
+			"from": [ 2, 0, 3 ],
+			"to": [ 2, 16, 16 ],
+			"faces": {
+				"west": { "uv": [ 3, 0, 16, 16 ], "texture": "#tex_main" }
+			}
+		},
+		{
+			"__comment": "Brace L",
+			"from": [ 0, 0, 0 ],
+			"to": [ 2, 16, 3 ],
+			"faces": {
+				"south": { "uv": [ 3, 0, 6, 16 ], "texture": "#tex_brace" },
+				"west": { "uv": [ 0, 0, 3, 16 ], "texture": "#tex_brace" }
+			}
+		},
+		{
+			"__comment": "Carpet Left",
+			"from": [ 0, 0, 3 ],
+			"to": [ 2, 0, 16 ],
+			"faces": {
+				"up": { "uv": [ 16, 16, 3.5, 14 ], "texture": "#tex_detail", "rotation": 270 }
+			}
+		}
+	]
+}
